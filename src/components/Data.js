@@ -22,7 +22,7 @@ export const Home_Banner_Right_Data = [
     imgsrc: HomeBanner,
   },
 ];
-
+//val, index
 export const Sdata_Five = [
   {
     imgsrc: 'https://image.flaticon.com/icons/svg/3141/3141209.svg',

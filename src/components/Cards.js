@@ -74,6 +74,7 @@ export const Card_Seven = (props) => {
         <div className='back'>
           <div className='back-content '>
             <h4>{props.title}</h4>
+            <h6 style={{color:'white'}}>{props.role}</h6>
             <a href={props.links_tw} target='_blank'>
               <i className='fab fa-twitter tw' title='Twitter'></i>
             </a>
@@ -101,6 +102,7 @@ export const Service_Banner_Left = (props) => {
     <div className='service_header'>
       <div className='service_header_content all_header'>
         <h1>{props.heading}</h1>
+        <h4>{props.description}</h4>
       </div>
     </div>
   );
@@ -123,7 +125,7 @@ export const Card = (props) => {
         </div>
         <div className='service_demo_text'>
           <h4>{props.title}</h4>
-          <p>{props.pera}</p>
+          <h6>{props.pera}</h6>
         </div>
       </div>
     </div>
@@ -154,6 +156,7 @@ export const Card_Three = (props) => {
         </div>
         <div className='data_demo_text'>
           <h4>{props.title}</h4>
+          <h6> {props.pera}</h6>
         </div>
       </div>
     </div>

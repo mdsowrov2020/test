@@ -6,6 +6,7 @@ import {
   Card_Two,
   Card_Three,
   Card_Nine_Left,
+  Card_Nine_Left_Content,
   Card_Nine_Right,
   Service_Banner_Left,
   Service_Banner_Right,
@@ -19,7 +20,11 @@ import {
   Service_Banner_Left_Data,
   Service_Banner_Right_Data,
 } from './Data';
-
+import Query from '../components/Query';
+import SERVICE_BANNER_QUERY  from '../queries/services/Service_page_banner_left';
+import SERVICE_CARD_QUERY  from '../queries/services/Services_card';
+import SERVICE_LCARD_QUERY from '../queries/services/services_lcard';
+import DATA_SCIENCE_ANALYTICS_QUERY from '../queries/services/Services_lower_mid';
 export class Service extends Component {
   render() {
     return (
@@ -32,11 +37,25 @@ export class Service extends Component {
           <div className='container'>
             <div className='row justify-content-center'>
               <div className='col-lg-6 order-1 order-lg-1 d-flex align-items-center'>
-                {Service_Banner_Left_Data.map((val, index) => {
+              <Query query={SERVICE_BANNER_QUERY} id={null}>
+              {({ data: { service } }) => {
+                var list=[];
+                list.push(service);
+                return(
+                  <div>
+                {list.map((val, index) => {
                   return (
-                    <Service_Banner_Left key={index} heading={val.heading} />
+                    <Service_Banner_Left
+                    key={index}
+                    heading={val.banner_header}
+                    description={val.banner_description}
+                    />
                   );
                 })}
+                </div>
+              );
+            }}
+                </Query>
               </div>
               <div className='col-lg-6 order-2 order-lg-2'>
                 {Service_Banner_Right_Data.map((val, index) => {
@@ -52,16 +71,24 @@ export class Service extends Component {
         <section className='d-flex align-items-center py-5'>
           <div className='container'>
             <div className='row justify-content-center mt-4'>
-              {Sdata.map((val, index) => {
+            <Query query={SERVICE_CARD_QUERY}>
+            {({ data: { service } }) => {
+              return(
+                <div className="row container">
+              {service.Services_card.map((val, index) => {
                 return (
                   <Card
                     key={index}
-                    imgsrc={val.imgsrc}
-                    title={val.title}
-                    pera={val.pera}
+                    imgsrc={val.Logo.url}
+                    title={val.Title}
+                    pera={val.Description}
                   />
                 );
               })}
+              </div>
+            );
+          }}
+          </Query>
             </div>
           </div>
         </section>
@@ -115,26 +142,50 @@ export class Service extends Component {
             <div className='row justify-content-center'>
               <div className='col-lg-6 text-center'>
                 <div className='data_header'>
-                  <h2>Data Science & Analytics</h2>
-                  <p>
-                    <sup>"</sup>Without big data analytics, companies are blind
-                    and deaf, wandering out onto the web like deer on a freeway.
-                    <sup>"</sup>
-                  </p>
-                  <p>-Geoffrey Moore</p>
+                <Query query={DATA_SCIENCE_ANALYTICS_QUERY} id={null}>
+                {({ data: { service } }) => {
+                  var list=[];
+                  list.push(service);
+                  return(
+                    <div className="row container">
+                  {list.map((val, index) => {
+                    return (
+                      <div key={index} className="container">
+                      <h2>{val.lower_mid_header}</h2>
+                      <p>
+                        <sup>{val.lower_mid_description}</sup>
+
+                      </p>
+                      </div>
+                    );
+
+                  })}
+                  </div>
+                );
+              }}
+              </Query>
                 </div>
               </div>
             </div>
             <div className='row justify-content-center'>
-              {Sdata_Three.map((val, index) => {
+            <Query query={SERVICE_LCARD_QUERY} id={null}>
+            {({ data: { service } }) => {
+              return(
+                <div className="row container">
+              {service.l_card.map((val, index) => {
                 return (
                   <Card_Three
                     key={index}
-                    imgsrc={val.imgsrc}
-                    title={val.title}
+                    imgsrc={val.imgsrc.url}
+                    title={val.Header}
+                    pera ={val.Description}
                   />
                 );
               })}
+              </div>
+            );
+          }}
+          </Query>
             </div>
           </div>
         </section>

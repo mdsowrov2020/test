@@ -19,6 +19,8 @@ import Query from '../components/Query';
 import HOME_MID_QUERY from '../queries/home/Home_mid_section';
 import HOME_BANNER_QUERY from '../queries/home/Home_page_banner_left';
 import HOME_CARD_ONE_QUERY  from '../queries/home/Home_card_one';
+import HOME_CHOOSE_QUERY  from '../queries/home/Home_choose_us';
+import KEY_PEOPLE_QUERY  from '../queries/home/key_people';
 export const Home = () => {
   return (
     <>
@@ -97,12 +99,12 @@ export const Home = () => {
                   <Query query={ HOME_CARD_ONE_QUERY }>
                   {({ data: { home } }) => {
                     return(
-                    <div>
+                    <div className='row container'>
                       {home.card.map((val, index) => {
                         return (
                           <Card_Five
                             key={index}
-                            imgsrc={val.imgsrc}
+                            imgsrc={val.imgsrc.url}
                             title={val.Header}
                             pera={val.Description}
                           />
@@ -128,17 +130,25 @@ export const Home = () => {
                 </div>
               </div>
               <div className='row justify-content-center pt-5'>
-                {Sdata_Six.map((val, index) => {
+              <Query query={HOME_CHOOSE_QUERY} id={null}>
+              {({ data: { home } }) => {
+                return(
+                  <div className='row container'>
+                {home.Choose_us_for.map((val, index) => {
                   return (
                     <Card_Six
-                      key={index}
-                      imgsrc={val.imgsrc}
-                      title={val.title}
-                      pera={val.pera}
+                      key={val.id}
+                      imgsrc={val.imgsrc.url}
+                      title={val.Header}
+                      pera={val.Description}
                     />
                   );
                 })}
-              </div>
+            </div>
+            );
+          }}
+          </Query>
+          </div>
             </div>
           </div>
         </section>
@@ -154,19 +164,27 @@ export const Home = () => {
             </div>
           </div>
           <div className='row justify-content-center'>
-            {Sdata_Seven.map((val, index) => {
+          <Query query={KEY_PEOPLE_QUERY} id={null}>
+          {({ data: { keyPeople } }) => {
+            return(
+              <div className='row container justify-content-center'>
+            {keyPeople.map((val,index) => {
               return (
                 <Card_Seven
                   key={index}
-                  imgsrc={val.imgsrc}
-                  title={val.title}
-                  links_tw={val.links_tw}
-                  links_fb={val.links_fb}
-                  links_in={val.links_in}
-                  links_ln={val.links_ln}
+                  imgsrc={val.imgsrc.url}
+                  title={val.name}
+                  role={val.role}
+                  links_tw={val.twitter}
+                  links_fb={val.facebook}
+                  links_ln={val.linkedin}
                 />
               );
             })}
+            </div>
+          );
+        }}
+        </Query>
           </div>
         </div>
       </section>
