@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bd2f426a.chunk.css",
+    "main.js": "/static/js/main.dad27489.chunk.js",
+    "main.js.map": "/static/js/main.dad27489.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6847f719.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6847f719.js.map",
+    "static/js/2.7b646ed9.chunk.js": "/static/js/2.7b646ed9.chunk.js",
+    "static/js/2.7b646ed9.chunk.js.map": "/static/js/2.7b646ed9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f5506f653bbab7e98bad34770d51713f.js": "/precache-manifest.f5506f653bbab7e98bad34770d51713f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bd2f426a.chunk.css.map": "/static/css/main.bd2f426a.chunk.css.map",
+    "static/js/2.7b646ed9.chunk.js.LICENSE.txt": "/static/js/2.7b646ed9.chunk.js.LICENSE.txt",
+    "static/media/ArmanSir.jpg": "/static/media/ArmanSir.81ebc153.jpg",
+    "static/media/contact.png": "/static/media/contact.c93e770d.png",
+    "static/media/logo.svg": "/static/media/logo.ee7cd8ed.svg",
+    "static/media/money.png": "/static/media/money.40e85e6c.png",
+    "static/media/project.png": "/static/media/project.5e3978ea.png",
+    "static/media/seo.png": "/static/media/seo.5477ec34.png",
+    "static/media/service.jpg": "/static/media/service.ec62375d.jpg",
+    "static/media/service.png": "/static/media/service.f70a52d4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6847f719.js",
+    "static/js/2.7b646ed9.chunk.js",
+    "static/css/main.bd2f426a.chunk.css",
+    "static/js/main.dad27489.chunk.js"
+  ]
+}
