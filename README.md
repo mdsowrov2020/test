@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## First Step After Cloning
+if you are cloning this, first command you should run is #npm install, 
+it will install all the dependencies to your local machine
 ## Available Scripts
 
 In the project directory, you can run:

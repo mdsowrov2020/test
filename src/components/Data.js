@@ -1,10 +1,18 @@
 import React from 'react';
 import HomeBanner from './images/seo.png';
 import ServiceBanner from './images/service.png';
+import ShuvoSir from './images/ArmanSir.jpg';
 import PriceBanner from './images/money.png';
 import ContactBanner from './images/contact.png';
 import PortfolioBanner from './images/project.png';
 import ArmanSir from './images/ArmanSir.jpg';
+import Social from './images/social.jpg';
+import Digital from './images/data.jpg';
+import WebDesign from './images/web_design.jpg';
+import WebDev from './images/web_dev.jpg';
+import Android from './images/android_dev.jpg';
+import Flutter from './images/flutter.jpg';
+import Passport from './images/passport.jpg';
 
 // ========================================== Home part Start ============================
 
@@ -14,31 +22,50 @@ export const Home_Banner_Left_Data = [
     title: 'We bring you new Customers ',
     pera:
       'We build effective strategies to help you reach customers and prospects across the entire web.',
-  },
-];
-
-export const Home_Banner_Right_Data = [
-  {
     imgsrc: HomeBanner,
   },
 ];
-//val, index
-export const Sdata_Five = [
+
+export const HomeSecondSectionData = [
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/3141/3141209.svg',
+    link: '/digitalPrice',
+    icon: <i class='fas fa-bullhorn'></i>,
     title: 'Digital Marketing',
     pera:
       'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2867/2867308.svg',
+    link: '/dataSciencePrice',
+    icon: <i class='fas fa-database'></i>,
     title: 'Data Science',
     pera:
       'Through personalized analytics dashboards, you can measure the impact your message is having on growth and campaign',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2920/2920244.svg',
+    link: '/webdesprice',
+    icon: <i class='fas fa-laptop-code'></i>,
     title: 'Web Design',
+    pera:
+      'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
+  },
+  {
+    link: '/webdevprice',
+    icon: <i class='fas fa-code'></i>,
+    title: 'Web Development',
+    pera:
+      'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
+  },
+  {
+    link: '/androiddev',
+    icon: <i class='fas fa-mobile-alt'></i>,
+    title: 'Android development',
+    pera:
+      'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
+  },
+  {
+    link: '/flutterdev',
+    icon: <i class='fas fa-mobile-alt'></i>,
+    title: 'Flutter development',
     pera:
       'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
   },
@@ -46,17 +73,17 @@ export const Sdata_Five = [
 
 export const Sdata_Six = [
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2942/2942340.svg',
+    icon: <i class='fas fa-chart-pie'></i>,
     title: 'High-End Anaylizing',
     pera: 'Share processes and data secure lona need to know basis',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2617/2617930.svg',
+    icon: <i class='fas fa-bullhorn'></i>,
     title: 'Excellence Track Record',
     pera: ' Our team assured your web site is always safe and secure',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/3135/3135656.svg',
+    icon: <i class='fas fa-headset'></i>,
     title: 'Our Dedicated Support',
     pera: 'We finally found a host that truly understood the unique',
   },
@@ -64,36 +91,36 @@ export const Sdata_Six = [
 
 export const Sdata_Seven = [
   {
-    imgsrc:
-      'https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg',
+    imgsrc: Passport,
     title: 'Md Shohel Arman',
+    subtitle: 'Advisor',
     links_tw: 'https://twitter.com/explore',
     links_fb: 'https://twitter.com/explore',
     links_in: 'https://twitter.com/explore',
     links_ln: 'https://twitter.com/explore',
   },
   {
-    imgsrc:
-      'https://cdn.pixabay.com/photo/2017/12/19/09/38/beautiful-3027662_960_720.jpg',
+    imgsrc: ShuvoSir,
     title: 'Md Shohel Arman',
+    subtitle: 'Advisor',
     links_tw: 'https://twitter.com/explore',
     links_fb: 'https://twitter.com/explore',
     links_in: 'https://twitter.com/explore',
     links_ln: 'https://twitter.com/explore',
   },
   {
-    imgsrc:
-      'https://cdn.pixabay.com/photo/2017/07/31/14/55/black-and-white-2558273_960_720.jpg',
+    imgsrc: ShuvoSir,
     title: 'Md Shohel Arman',
+    subtitle: 'Advisor',
     links_tw: 'https://twitter.com/explore',
     links_fb: 'https://twitter.com/explore',
     links_in: 'https://twitter.com/explore',
     links_ln: 'https://twitter.com/explore',
   },
   {
-    imgsrc:
-      'https://cdn.pixabay.com/photo/2016/11/21/15/43/india-1846041_960_720.jpg',
+    imgsrc: ShuvoSir,
     title: 'Md Shohel Arman',
+    subtitle: 'Advisor',
     links_tw: 'https://twitter.com/explore',
     links_fb: 'https://twitter.com/explore',
     links_in: 'https://twitter.com/explore',
@@ -105,9 +132,29 @@ export const Sdata_Seven = [
 
 // =================================== Service part start =========================
 
-export const Service_Banner_Left_Data = [
+export const DigitalMarketting = [
   {
-    heading: 'Fully Service Digital Creative Agency',
+    imgsrc: Social,
+    title: 'Digital Marketting',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
+    projects: '15',
+  },
+];
+export const DataScienceData = [
+  {
+    imgsrc: Digital,
+    title: 'Data Science',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
+  },
+];
+export const WebDevData = [
+  {
+    imgsrc: WebDesign,
+    title: 'Web Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
   },
 ];
 
@@ -135,48 +182,85 @@ export const Sdata = [
   },
 ];
 
-export const Sdata_Two = [
+export const DigitalMarketData = [
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/888/888737.svg',
+    icon: <i class='fas fa-blog'></i>,
     title: 'Blog',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/890/890260.svg',
+    icon: <i class='fas fa-sms'></i>,
     title: 'SMS',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2965/2965306.svg',
+    icon: <i class='far fa-envelope'></i>,
     title: 'Email',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/921/921591.svg',
+    icon: <i class='fab fa-adversal'></i>,
     title: 'SEO',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2127/2127596.svg',
+    icon: <i class='far fa-comments'></i>,
     title: 'SMM',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/3107/3107757.svg',
+    icon: <i class='fas fa-tv'></i>,
     title: 'Display',
   },
 ];
-
-export const Sdata_Three = [
+export const WebData = [
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2818/2818289.svg',
+    icon: <i class='fas fa-pencil-ruler'></i>,
+    title: 'Responsive Design',
+  },
+  {
+    icon: <i class='fas fa-cannabis'></i>,
+    title: 'Fast response',
+  },
+  {
+    icon: <i class='fas fa-american-sign-language-interpreting'></i>,
+    title: 'Well commented Code',
+  },
+  {
+    icon: <i class='far fa-address-card'></i>,
+    title: 'Userfriendly ui',
+  },
+];
+
+export const MobileData = [
+  {
+    icon: <i class='fas fa-pencil-ruler'></i>,
+    title: 'Excellent Design',
+  },
+  {
+    icon: <i class='fas fa-cannabis'></i>,
+    title: 'Fast response',
+  },
+  {
+    icon: <i class='fas fa-american-sign-language-interpreting'></i>,
+    title: 'Well commented Code',
+  },
+  {
+    icon: <i class='far fa-address-card'></i>,
+    title: 'Userfriendly ui',
+  },
+];
+
+export const DataScienceServiceData = [
+  {
+    icon: <i class='fas fa-coins'></i>,
     title: 'Data Collection',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/2103/2103675.svg',
+    icon: <i class='fab fa-cloudscale'></i>,
     title: 'Data Modeling',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/3079/3079036.svg',
+    icon: <i class='fab fa-creative-commons-sampling'></i>,
     title: 'Analysis Data',
   },
   {
-    imgsrc: 'https://image.flaticon.com/icons/svg/3029/3029337.svg',
+    icon: <i class='far fa-edit'></i>,
     title: 'Reporting',
   },
 ];
@@ -205,10 +289,72 @@ export const Sdata_Nine_Right = [
 // ========================================== Service part End============================
 
 // ========================================== Price part Start ============================
+export const DspriceServiceTitle = [
+  {
+    title: 'Data Science',
+  },
+];
+export const DmpriceServiceTitle = [
+  {
+    title: 'Digital Marketing',
+  },
+];
+export const WebDesignPriceData = [
+  {
+    title: 'Web Design',
+  },
+];
+export const WebDevPriceData = [
+  {
+    title: 'Web Development',
+  },
+];
+export const AndroidPriceData = [
+  {
+    title: 'Android Development',
+  },
+];
+export const FlutterPriceData = [
+  {
+    title: 'Flutter Development',
+  },
+];
 
 export const Price_Banner_Left_Data = [
   {
     heading: 'Our Pricing Plans',
+  },
+];
+export const DataSciencePriceData = [
+  {
+    heading: 'basic',
+    imgsrc: 'https://image.flaticon.com/icons/svg/2997/2997126.svg',
+    price: '900',
+    service_one: '10 Monthly Facebook Creative',
+    service_two: '2 Google Display Campaign (40 Banners)',
+    service_three: '2 Email Campaign (Up to 10k users)',
+    service_four: '2 Blog Content (1000 Words)',
+    service_five: '2 SMS Campaign (Up to 3k users)',
+  },
+  {
+    heading: 'Advance ',
+    imgsrc: 'https://image.flaticon.com/icons/svg/2997/2997126.svg',
+    price: '900',
+    service_one: '10 Monthly Facebook Creative',
+    service_two: '2 Google Display Campaign (40 Banners)',
+    service_three: '2 Email Campaign (Up to 10k users)',
+    service_four: '2 Blog Content (1000 Words)',
+    service_five: '2 SMS Campaign (Up to 3k users)',
+  },
+  {
+    heading: 'Gold',
+    imgsrc: 'https://image.flaticon.com/icons/svg/2997/2997126.svg',
+    price: '900',
+    service_one: '10 Monthly Facebook Creative',
+    service_two: '2 Google Display Campaign (40 Banners)',
+    service_three: '2 Email Campaign (Up to 10k users)',
+    service_four: '2 Blog Content (1000 Words)',
+    service_five: '2 SMS Campaign (Up to 3k users)',
   },
 ];
 
@@ -293,7 +439,12 @@ export const Sdata_Eight = [
 // ========================================== Price part End ============================
 
 // ========================================== Portfolio part start========================
-
+export const PortfolioMainData = [
+  {
+    details:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium sem diam, id vehicula velit ultricies et. Donec scelerisque metus elit, pretium molestie mi aliquet eget. Pellentesque volutpat vestibulum facilisis. Maecenas elementum, urna vestibulum viverra interdum, ipsum orci porttitor nibh, sed elementum magna neque ac leo. Donec libero eros, tempor et mauris in,',
+  },
+];
 export const Video_Data = [
   {
     video: 'https://www.youtube.com/watch?v=z1JG_iGp9zs',
@@ -313,14 +464,12 @@ export const Portfolio_Banner_Right_Data = [
 ];
 export const Portfolio_Content_Data = [
   {
-    img_dm_one: ArmanSir,
-    img_dm_two: ArmanSir,
-    img_dm_three: ArmanSir,
-    img_ds_one: ArmanSir,
-    img_ds_two: ArmanSir,
-    img_ds_three: ArmanSir,
-    img_web_one: ArmanSir,
-    img_web_two: ArmanSir,
+    img_dm_one: Social,
+    img_dm_two: Digital,
+    img_dm_three: WebDesign,
+    img_ds_one: WebDev,
+    img_ds_two: Android,
+    img_ds_three: Flutter,
   },
 ];
 
@@ -339,7 +488,7 @@ export const Contact_Banner_Left_Data = [
 // ========================================== Blog part Start =========================
 export const Author = [
   {
-    imgsrc: ArmanSir,
+    imgsrc: Passport,
     name: 'Md Shohel Arman',
   },
 ];

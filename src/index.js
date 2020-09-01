@@ -5,17 +5,19 @@ import App from './App';
 import { ApolloProvider } from "@apollo/react-hooks";
 import client from "./utils/apolloClient";
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollTop from './components/ScrollTop';
 
 ReactDOM.render(
-  <Router>
-  <ApolloProvider client={client}>
-    <App/>
-  </ApolloProvider>
-  </Router>,
-
-
-
+  <>
+    <Router>
+      <ScrollTop>
+        <ApolloProvider client={client}>
+          <App/>
+        </ApolloProvider>
+      </ScrollTop>
+    </Router>
+  </>,
   document.getElementById('root')
 );
 

@@ -1,49 +1,61 @@
 import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeBanner from './images/seo.png';
+import ContactBanner from './images/contact.png';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 //======================================== Home part start  =============================
 
-export const Home_Banner_Left = (props) => {
+export const Home_Banner = (props) => {
   return (
-    <div className='left'>
-      <div className='left_inner_content all_header'>
-        <h5>{props.heading}</h5>
-        <h1>{props.title}</h1>
-        <p>{props.pera}</p>
-        <div className='all-button slide-btn'>
-          <a href='#'>explore</a>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export const Home_Banner_Right = (props) => {
-  return (
-    <div className='right'>
-      <img src={props.imgsrc} className='img-fluid animated' />
-    </div>
-  );
-};
-
-export const Card_Five = (props) => {
-  return (
-    <div className='col-md-4 col-sm-4 digital_main my-4'>
-      <div className='digital_part   justify-content-center'>
-        <div className='digital_image'>
-          <img src={props.imgsrc} />
-        </div>
-        <div className='digital_text_content'>
-          <h4>{props.title}</h4>
-          <p>{props.pera}</p>
-          <div className='all-button'>
-            <Link className='nav-link dm' to='/services'>
-              know more
-            </Link>
+    <section className='mobile_height d-flex align-items-center'>
+      <div className='container'>
+        <div className='row justify-content-center'>
+          <div className='col-lg-6 order-1 order-lg-1 d-flex align-items-center'>
+            <div className='left'>
+              <div className='left_inner_content all_header'>
+                <h5>{props.heading}</h5>
+                <h1>{props.title}</h1>
+                <p>{props.pera}</p>
+                <div className='all-button slide-btn'>
+                  <a href='#'>explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-6 order-2 order-lg-2'>
+            <div className='right'>
+              <img src={HomeBanner} className='img-fluid animated' />
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  );
+};
+
+export const HomeSecondSection = (props) => {
+  return (
+    <div className='col-md-4 px-0  my-2'>
+      <Link className='nav-link dm' to={props.link}>
+        <div className='digital_part '>
+          <div className='digital_icon'>
+            <h3>{props.icon}</h3>
+          </div>
+          <div className='digital_text_content'>
+            <h4>{props.title}</h4>
+            <p>{props.pera}</p>
+            <p className='price_hover'>
+              Price
+              <span>
+                <i class='fas fa-long-arrow-alt-right'></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };
@@ -53,7 +65,7 @@ export const Card_Six = (props) => {
     <div className='col-md-4  col-sm'>
       <div className='choose_inner m-1'>
         <div className='choose_image'>
-          <img src={props.imgsrc} />
+          <h3>{props.icon}</h3>
         </div>
         <div className='choose_text'>
           <h4>{props.title}</h4>
@@ -64,29 +76,36 @@ export const Card_Six = (props) => {
   );
 };
 
-export const Card_Seven = (props) => {
+export const Team = (props) => {
   return (
-    <div className='col-md-3 col-sm my-4'>
-      <div className='card '>
-        <div className='front'>
-          <img src={props.imgsrc} />
-        </div>
-        <div className='back'>
-          <div className='back-content '>
+    <div className='col-md-3 col-sm my-2'>
+      <div className='team'>
+        <div className='team_content'>
+          <div className='team_image'>
+            <img src={props.imgsrc} />
+          </div>
+          <div className='name'>
             <h4>{props.title}</h4>
-            <h6 style={{color:'white'}}>{props.role}</h6>
-            <a href={props.links_tw} target='_blank'>
-              <i className='fab fa-twitter tw' title='Twitter'></i>
-            </a>
-            <a href={props.links_fb} target='_blank'>
-              <i className='fab fa-facebook fb' title='Facebook'></i>
-            </a>
-            <a href={props.links_in} target='_blank'>
-              <i className='fab fa-instagram in' title='Instagram'></i>
-            </a>
-            <a href={props.links_ln} target='_blank'>
-              <i className='fab fa-linkedin-in ln' title='Linkedin'></i>
-            </a>
+            <p>{props.subtitle}</p>
+          </div>
+          <div className='team_social'>
+            <ul>
+              <li>
+                <a href='#'>
+                  <i class='fab fa-facebook-f tm_fb'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fab fa-linkedin tm_ins'></i>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fab fa-twitter tm_tw'></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -102,7 +121,6 @@ export const Service_Banner_Left = (props) => {
     <div className='service_header'>
       <div className='service_header_content all_header'>
         <h1>{props.heading}</h1>
-        <h4>{props.description}</h4>
       </div>
     </div>
   );
@@ -125,130 +143,63 @@ export const Card = (props) => {
         </div>
         <div className='service_demo_text'>
           <h4>{props.title}</h4>
-          <h6>{props.pera}</h6>
+          <p>{props.pera}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export const Card_Two = (props) => {
+export const DigitalMarket = (props) => {
   return (
-    <div className='col-md-4 col-6 col-sm-4 px-2 my-2'>
+    <div className='col-md-4 col-6  my-2'>
       <div className='service_role_demo px-1'>
         <div className='service_role_demo_image'>
-          <img src={props.imgsrc} />
+          <h2>{props.icon}</h2>
         </div>
         <div className='service_role_demo_text'>
-          <h4>{props.title}</h4>
+          <hp>{props.title}</hp>
         </div>
       </div>
     </div>
   );
 };
 
-export const Card_Three = (props) => {
+export const DataScience = (props) => {
   return (
-    <div className='col-md-3 col-6 col-sm-3 px-2 my-4'>
-      <div className='data_demo px-1'>
-        <div className='service_demo_image'>
-          <img src={props.imgsrc} />
+    <div className='col-md-3 col-6'>
+      <div className='data_sciences'>
+        <div className='ds_icon'>
+          <h2>{props.icon}</h2>
         </div>
-        <div className='data_demo_text'>
-          <h4>{props.title}</h4>
-          <h6> {props.pera}</h6>
-        </div>
+        <p>{props.title}</p>
       </div>
     </div>
   );
 };
 
-export const Card_Nine_Left = (props) => {
-  return (
-    <>
-      <div className='col-md-6 col-sm-6'>
-        <div className='what_data_science'>
-          <div className='what_data_science_content'>
-            <h2>{props.l_title}</h2>
-            <p>{props.l_pera}</p>
-
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.l_content_one}
-            </h4>
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.l_content_two}
-            </h4>
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.l_content_three}
-            </h4>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export const Card_Nine_Right = (props) => {
-  return (
-    <>
-      <div className='col-md-6 col-sm-6'>
-        <div className='data_science_role'>
-          <div className='data_science_role_content'>
-            <h2>{props.r_title}</h2>
-            <p>{props.r_pera}</p>
-
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.r_content_one}
-            </h4>
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.r_content_two}
-            </h4>
-            <h4>
-              <span>
-                <i className='far fa-hand-point-right'></i>
-              </span>
-              {props.r_content_three}
-            </h4>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
 //======================================== Service part End  ============================
 
 //======================================== Price part start  =============================
 
-export const Price_Banner_Left = (props) => {
+export const Price_Banner = (props) => {
   return (
-    <div className='price_header'>
-      <div className='price_header_content all_header'>
-        <h1>{props.heading}</h1>
+    <section>
+      <div className='price_banner d-flex align-items-center'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-md-6'>
+              <div className='price_banner_text'>
+                <h2>
+                  We will provide you the best service with the best pricing
+                  plan
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  );
-};
-
-export const Price_Banner_Right = (props) => {
-  return (
-    <div className='price_image'>
-      <img src={props.imgsrc} className='img-fluid animated' />
-    </div>
+    </section>
   );
 };
 
@@ -307,30 +258,24 @@ export const Card_Eight = (props) => {
 //======================================== Price part End  =============================
 
 // ======================================= Portfolio Part Start ========================
-export const Portfolio_Banner_Left = (props) => {
-  return (
-    <div className='portfolio_header'>
-      <div className='portfolio_header_content all_header'>
-        <h1>{props.heading}</h1>
-      </div>
-    </div>
-  );
-};
 
-export const Portfolio_Banner_Right = (props) => {
-  return (
-    <div className='portfolio_image'>
-      <img src={props.imgsrc} className='img-fluid animated' />
-    </div>
-  );
-};
-
-export const Portfolio_Content = (props) => {
+export const PortfolioMain = (props) => {
   return (
     <>
-      <div className='row'>
-        <div className='col-lg-12'></div>
-      </div>
+      <section>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <div className='portfolio_header'>
+                <h2>Portfolio</h2>
+              </div>
+              <div className='port_details'>
+                <p>{props.details}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
@@ -359,7 +304,7 @@ export const Blog_Right = (props) => {
 export const Contact_Left = (props) => {
   return (
     <div className='contact_left'>
-      <img src={props.imgsrc} className='img-fluid animated' />
+      <img src={ContactBanner} className='img-fluid animated' />
     </div>
   );
 };

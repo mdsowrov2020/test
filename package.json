@@ -1,10 +1,10 @@
 {
-  "homepage": "http://somikoronits.com",
-  "name": "somikoronits",
+  "homepage": "http://www.somikoronits.com",
+  "name": "myproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.1.1",
+    "@apollo/client": "^3.1.4",
     "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -14,7 +14,6 @@
     "bootstrap": "^4.5.0",
     "emailjs-com": "^2.4.1",
     "graphql": "^15.3.0",
-    "graphql-tag": "^2.11.0",
     "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
@@ -24,7 +23,7 @@
     "react-dom": "^16.13.1",
     "react-magnific-popup": "^1.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.3",
     "react-slick": "^0.26.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.1"
