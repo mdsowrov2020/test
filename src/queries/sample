@@ -1,0 +1,12 @@
+import gql from "graphql-tag";
+
+const _QUERY=gql`
+query _query {
+   page {
+     card{
+    ...on ComponentCardCard{id imgsrc { url } Header Description}
+  }
+   }
+ }`;
+
+export default QUERY;

@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 
 const CONTACTS_QUERY=gql`
-query Home_query {
+query footer_query {
  contacts{
   Email
   Phone

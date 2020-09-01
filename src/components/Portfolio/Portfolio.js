@@ -268,10 +268,13 @@ export const Portfolio = (props) => {
         <section
           id='video'
           class='py-5'
-          style={{ backgroundImage: `url(${require('../images/seo.png')})` }}
+          style={{ backgroundImage: `url(${require('../images/ocean_price.jpg')})` }}
         >
           <div class='container'>
+
             <div class='row justify-content-center video-icon'>
+
+            
               {Video_Data.map((val) => {
                 return (
                   <a class='video-popup' href={val.video}>

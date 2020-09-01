@@ -20,7 +20,7 @@ export default function PriceCommonCard(props) {
                   <sub>/month</sub>
                 </span>
               </h2>
-              <p>{props.service_one}</p>
+              <pre>{props.service_one}</pre>
               <p>{props.service_two}</p>
               <p>{props.service_three}</p>
               <p>{props.service_four}</p>
