@@ -39,8 +39,6 @@ export default function AndroidApp(props) {
           );
           }}
             </Query>
-              );
-            })}
           </div>
         </div>
       </section>

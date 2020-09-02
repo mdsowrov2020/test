@@ -8,7 +8,6 @@ import {
 } from '../Cards';
 import {
   HomeSecondSectionData,
-  Sdata_Seven,
   Sdata_Six,
   Home_Banner_Left_Data,
   Home_Banner_Right_Data,

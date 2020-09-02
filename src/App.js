@@ -28,7 +28,8 @@ import DigitalMarket from './components/ServiceDetails/DigitalMarket/DigitalMark
 import DataScience from './components/ServiceDetails/DataScience/DataScience';
 import WebDev from './components/ServiceDetails/WebDev/WebDev';
 import ScrollTop from './components/ScrollTop';
-import { Planets } from 'react-preloaders';
+
+import {Planets} from 'react-preloaders';
 
 const BlogRedirection = () => <Redirect to='/blog/1' />;
 
@@ -36,7 +37,7 @@ function App() {
   return (
     <React.Fragment>
       <Menu />
-           <Planets />
+      <Planets  time={4000} color={'#F13610'} background="#fff" />
       <Switch>
         <Route exact path='/digitalMarket' component={DigitalMarket} />
         <Route exact path='/dataScience' component={DataScience} />

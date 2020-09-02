@@ -38,7 +38,7 @@ export const Home_Banner = (props) => {
 
 export const HomeSecondSection = (props) => {
   return (
-    <div className='col-md-4 px-0  my-2'>
+    <div className='col-md-4 col-6 px-0  my-2'>
       <Link className='nav-link dm' to={props.link}>
         <div className='digital_part '>
           <div className='digital_icon'>
@@ -91,17 +91,17 @@ export const Team = (props) => {
           <div className='team_social'>
             <ul>
               <li>
-                <a href='#'>
+                <a href={props.links_fb}>
                   <i class='fab fa-facebook-f tm_fb'></i>
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a href={props.links_ln}>
                   <i class='fab fa-linkedin tm_ins'></i>
                 </a>
               </li>
               <li>
-                <a href='#'>
+                <a href={props.links_tw}>
                   <i class='fab fa-twitter tm_tw'></i>
                 </a>
               </li>
@@ -152,7 +152,7 @@ export const Card = (props) => {
 
 export const DigitalMarket = (props) => {
   return (
-    <div className='col-md-4 col-6  my-2'>
+    <div className='col-md-4 col-6  my-3'>
       <div className='service_role_demo px-1'>
         <div className='service_role_demo_image'>
           <h2>{props.icon}</h2>
@@ -167,7 +167,7 @@ export const DigitalMarket = (props) => {
 
 export const DataScience = (props) => {
   return (
-    <div className='col-md-3 col-6'>
+    <div className='col-md-3 my-3 col-6'>
       <div className='data_sciences'>
         <div className='ds_icon'>
           <h2>{props.icon}</h2>
