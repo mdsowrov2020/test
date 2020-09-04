@@ -1,9 +1,10 @@
 import React from 'react';
 import './footer.css';
+import {Link} from 'react-router-dom';
 const FooterCommon = (props) => {
   return (
     <>
-    
+
       <section className='pt-5 footer_bg'>
         <div className='container'>
           <div className='row justify-content-center'>
@@ -48,19 +49,20 @@ const FooterCommon = (props) => {
                 </div>
                 <ul>
                   <li>
-                    <a href='#'>Home</a>
+                      <Link to='/'>Home</Link>
                   </li>
                   <li>
-                    <a href='#'>Service</a>
+                      <Link to='/services'>Service</Link>
                   </li>
                   <li>
-                    <a href='#'>Price</a>
+                      <Link to='/price'>Price</Link>
                   </li>
                   <li>
-                    <a href='#'>Portfolio</a>
+                      <Link to='/portfolio'>Portfolio</Link>
                   </li>
                   <li>
-                    <a href='#'>Contact</a>
+                  <Link to='/contact'>Contact</Link>
+
                   </li>
                 </ul>
               </div>
@@ -126,17 +128,17 @@ const FooterCommon = (props) => {
               <div className='footer_social'>
                 <ul>
                   <li>
-                    <a href='#'>
+                    <a href={props.facebook_url} target='_blank'>
                       <i class='fab fa-facebook-f footer_fb'></i>
                     </a>
                   </li>
                   <li>
-                    <a href='#'>
+                    <a href={props.instagram_url} target='_blank'>
                       <i class='fab fa-instagram ins'></i>
                     </a>
                   </li>
                   <li>
-                    <a href='#'>
+                    <a href={props.youtube_url} target='_blank'>
                       <i class='fab fa-youtube ytb'></i>
                     </a>
                   </li>

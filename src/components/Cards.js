@@ -2,9 +2,7 @@ import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import HomeBanner from './images/seo.png';
 import ContactBanner from './images/contact.png';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Carousel from 'react-elastic-carousel';
 
 //======================================== Home part start  =============================
 
@@ -78,7 +76,7 @@ export const Card_Six = (props) => {
 
 export const Team = (props) => {
   return (
-    <div className='col-md-3 col-sm my-2'>
+    <div className='col-md-12 col-sm my-2'>
       <div className='team'>
         <div className='team_content'>
           <div className='team_image'>
@@ -202,10 +200,10 @@ export const Price_Banner = (props) => {
     </section>
   );
 };
-
+//=======================================PRICE CARD=================================//
 export const Card_Four = (props) => {
   return (
-    <div className='col-md-4 col-sm-4  px-3 my-2'>
+    <div className='col-md-12  px-3 my-2'>
       <div className='price_main_content text-center'>
         <div className='price_left_inner price_common'>
           <div className='price_basic_head'>
@@ -228,7 +226,7 @@ export const Card_Four = (props) => {
             <p>{props.pera_four}</p>
             <p>{props.pera_five}</p>
           </div>
-          <div className='all-button'>
+          <div className='all-button pc'> //#ee0c81
             <Link className='nav-link dm' to='/contact'>
               Contact now
             </Link>

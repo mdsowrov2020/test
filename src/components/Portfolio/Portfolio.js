@@ -203,7 +203,9 @@ export const Portfolio = (props) => {
                       </div>
                       <div className='col-md-6 col-6'>
                         <span className='click'>
-                          <i class='fa fa-link' aria-hidden='true'></i>
+                          <Link to='/webDesign'>
+                            <i class='fa fa-link' aria-hidden='true'></i>
+                          </Link>
                         </span>
                       </div>
                     </div>
@@ -229,7 +231,9 @@ export const Portfolio = (props) => {
                       </div>
                       <div className='col-md-6 col-6'>
                         <span className='click'>
-                          <i class='fa fa-link' aria-hidden='true'></i>
+                          <Link to='/Androids'>
+                            <i class='fa fa-link' aria-hidden='true'></i>
+                          </Link>
                         </span>
                       </div>
                     </div>
@@ -255,7 +259,9 @@ export const Portfolio = (props) => {
                       </div>
                       <div className='col-md-6 col-6'>
                         <span className='click'>
-                          <i class='fa fa-link' aria-hidden='true'></i>
+                          <Link to='/Flutter'>
+                            <i class='fa fa-link' aria-hidden='true'></i>
+                          </Link>
                         </span>
                       </div>
                     </div>
@@ -268,13 +274,12 @@ export const Portfolio = (props) => {
         <section
           id='video'
           class='py-5'
-          style={{ backgroundImage: `url(${require('../images/ocean_price.jpg')})` }}
+          style={{
+            backgroundImage: `url(${require('../images/ocean_price.jpg')})`,
+          }}
         >
           <div class='container'>
-
             <div class='row justify-content-center video-icon'>
-
-            
               {Video_Data.map((val) => {
                 return (
                   <a class='video-popup' href={val.video}>

@@ -14,9 +14,7 @@ import {
 } from '../Data';
 import { Link } from 'react-router-dom';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Carousel from 'react-elastic-carousel';
 
 //---------Queries---------
 import Query from '../Query';
@@ -24,6 +22,13 @@ import KEY_PEOPLE_QUERY from '../../queries/home/key_people';
 import HOME_BANNER_QUERY from '../../queries/home/Home_page_banner_left';
 import HOME_MID_QUERY from '../../queries/home/Home_mid_section';
 export const Home = () => {
+  const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 420, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 850, itemsToShow: 4 },
+  { width: 1150, itemsToShow: 4 },
+];
   const heading ="Information Technology Agency";
   return (
     <>
@@ -138,6 +143,7 @@ export const Home = () => {
           {({ data: { keyPeople } }) => {
             return(
               <div className='row container justify-content-center'>
+                <Carousel breakPoints={breakPoints} showArrows={true}>
             {keyPeople.map((val,index) => {
               return (
                 <Team
@@ -151,6 +157,7 @@ export const Home = () => {
                 />
               );
             })}
+                </Carousel>
             </div>
           );
         }}

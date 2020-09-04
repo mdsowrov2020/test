@@ -3,28 +3,106 @@
   padding: 0;
   outline: 0;
 }
+/* new animation start */
 .webs {
   text-align: center;
+  position: relative;
+  overflow: hidden;
   border-radius: 4px;
+  transition: all 0.5s linear;
   padding: 15px 0px;
   -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
 }
+.webs:hover {
+  background-color: #e3002d;
+  transition-delay: 0.56s;
+}
+.webs span {
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.webs:hover span:nth-child(1) {
+  left: 0;
+}
+.webs span:nth-child(1) {
+  top: 0;
+  transition: all 0.5s linear;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #e3002d);
+}
+
+.webs:hover span:nth-child(1) {
+  left: 100%;
+}
+.webs span:nth-child(3) {
+  bottom: 0;
+  transition: all 0.5s linear;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, #e3002d);
+}
+.webs:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s;
+}
+.webs span:nth-child(2) {
+  top: -100%;
+  transition: all 0.5s linear;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #e3002d);
+}
+.webs:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s;
+}
+.webs span:nth-child(4) {
+  bottom: -100%;
+  transition: all 0.5s linear;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #e3002d);
+}
+.webs:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s;
+}
+.webs:hover .web_icon h2 {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+.webs:hover p {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+/* new animation end */
 .web_section_head h4 {
   color: #109ea0;
   font-size: 16px;
+  transition: all 0.5s linear;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .web_icon h2 {
   color: #02668f;
+  transition: all 0.5s linear;
 }
 .mobile_icon h2 {
   color: #02668f;
 }
 .mobile {
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
   border-radius: 4px;
   padding: 15px 0px;
   -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
@@ -37,7 +115,74 @@
   color: #109ea0;
   text-transform: uppercase;
 }
+.mobile:hover {
+  background-color: #e3002d;
+  transition-delay: 0.56s;
+}
+.mobile span {
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.mobile:hover span:nth-child(1) {
+  left: 0;
+}
+.mobile span:nth-child(1) {
+  top: 0;
+  transition: all 0.5s linear;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #e3002d);
+}
 
+.mobile:hover span:nth-child(1) {
+  left: 100%;
+}
+.mobile span:nth-child(3) {
+  bottom: 0;
+  transition: all 0.5s linear;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, #e3002d);
+}
+.mobile:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s;
+}
+.mobile span:nth-child(2) {
+  top: -100%;
+  transition: all 0.5s linear;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #e3002d);
+}
+.mobile:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s;
+}
+.mobile span:nth-child(4) {
+  bottom: -100%;
+  transition: all 0.5s linear;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #e3002d);
+}
+.mobile:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s;
+}
+.mobile:hover .mobile_icon h2 {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+.mobile:hover p {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+/* new animation end */
 @media (max-width: 575px) {
   .webs {
     text-align: center;

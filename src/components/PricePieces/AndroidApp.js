@@ -2,6 +2,7 @@ import React from 'react';
 import PriceCommonCard from './PriceCommonCard';
 import { DataSciencePriceData, AndroidPriceData } from '../Data';
 import PriceCommonBanner from './PriceCommonBanner';
+import Carousel from 'react-elastic-carousel';
 
 
 //---Query---//
@@ -9,6 +10,13 @@ import Query from '../Query';
 import ANDROID_DEVELOPMENT_PRICE_QUERY from '../../queries/price/android_development_query';
 
 export default function AndroidApp(props) {
+  const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 420, itemsToShow: 1 },
+  { width: 768, itemsToShow: 1 },
+  { width: 850, itemsToShow: 1 },
+  { width: 1150, itemsToShow: 1},
+];
   return (
     <>
       {AndroidPriceData.map((val, index) => {
@@ -24,6 +32,7 @@ export default function AndroidApp(props) {
             {({ data: { pricing } }) => {
               return(
               <div className="container row center">
+                    <Carousel breakPoints={breakPoints} showArrows={false}>
             {pricing.Plans.map((val, index) => {
               return (
                 <PriceCommonCard
@@ -35,6 +44,7 @@ export default function AndroidApp(props) {
                 />
               );
             })}
+                   </Carousel>
             </div>
           );
           }}

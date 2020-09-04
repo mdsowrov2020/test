@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f67355c2.chunk.css",
-    "main.js": "/static/js/main.51520ccd.chunk.js",
-    "main.js.map": "/static/js/main.51520ccd.chunk.js.map",
+    "main.css": "/static/css/main.634b935e.chunk.css",
+    "main.js": "/static/js/main.0c3904f3.chunk.js",
+    "main.js.map": "/static/js/main.0c3904f3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6847f719.js",
     "runtime-main.js.map": "/static/js/runtime-main.6847f719.js.map",
-    "static/css/2.94d70851.chunk.css": "/static/css/2.94d70851.chunk.css",
-    "static/js/2.111e1f12.chunk.js": "/static/js/2.111e1f12.chunk.js",
-    "static/js/2.111e1f12.chunk.js.map": "/static/js/2.111e1f12.chunk.js.map",
+    "static/js/2.6dc03c01.chunk.js": "/static/js/2.6dc03c01.chunk.js",
+    "static/js/2.6dc03c01.chunk.js.map": "/static/js/2.6dc03c01.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9eac6265fb6a6b83e6ae63892f483bf.js": "/precache-manifest.a9eac6265fb6a6b83e6ae63892f483bf.js",
+    "precache-manifest.eccc35640df4861233521710a7fef908.js": "/precache-manifest.eccc35640df4861233521710a7fef908.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.94d70851.chunk.css.map": "/static/css/2.94d70851.chunk.css.map",
-    "static/css/main.f67355c2.chunk.css.map": "/static/css/main.f67355c2.chunk.css.map",
-    "static/js/2.111e1f12.chunk.js.LICENSE.txt": "/static/js/2.111e1f12.chunk.js.LICENSE.txt",
+    "static/css/main.634b935e.chunk.css.map": "/static/css/main.634b935e.chunk.css.map",
+    "static/js/2.6dc03c01.chunk.js.LICENSE.txt": "/static/js/2.6dc03c01.chunk.js.LICENSE.txt",
     "static/media/ArmanSir.jpg": "/static/media/ArmanSir.81ebc153.jpg",
     "static/media/android_dev.jpg": "/static/media/android_dev.0db703db.jpg",
     "static/media/contact.png": "/static/media/contact.c93e770d.png",
@@ -28,16 +26,14 @@
     "static/media/service.css": "/static/media/sea.a75357dc.jpg",
     "static/media/seo.png": "/static/media/seo.5477ec34.png",
     "static/media/service.png": "/static/media/service.f70a52d4.png",
-    "static/media/slick-theme.css": "/static/media/slick.d41f55a7.ttf",
     "static/media/social.jpg": "/static/media/social.37b581a8.jpg",
     "static/media/web_design.jpg": "/static/media/web_design.c55ca129.jpg",
     "static/media/web_dev.jpg": "/static/media/web_dev.1d1287fe.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6847f719.js",
-    "static/css/2.94d70851.chunk.css",
-    "static/js/2.111e1f12.chunk.js",
-    "static/css/main.f67355c2.chunk.css",
-    "static/js/main.51520ccd.chunk.js"
+    "static/js/2.6dc03c01.chunk.js",
+    "static/css/main.634b935e.chunk.css",
+    "static/js/main.0c3904f3.chunk.js"
   ]
 }

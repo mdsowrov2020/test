@@ -126,6 +126,15 @@ export const Sdata_Seven = [
     links_in: 'https://twitter.com/explore',
     links_ln: 'https://twitter.com/explore',
   },
+  {
+    imgsrc: ShuvoSir,
+    title: 'Md Shohel Arman',
+    subtitle: 'Advisor',
+    links_tw: 'https://twitter.com/explore',
+    links_fb: 'https://twitter.com/explore',
+    links_in: 'https://twitter.com/explore',
+    links_ln: 'https://twitter.com/explore',
+  },
 ];
 
 // ========================================== Home part End============================
@@ -134,16 +143,17 @@ export const Sdata_Seven = [
 
 export const DigitalMarketting = [
   {
-    imgsrc: Social,
     title: 'Digital Marketting',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
     projects: '15',
+    project_name: 'Somikoron Ecommerce',
+    url: 'https://somikoron.com/',
+    url_name: 'somikoron.com',
   },
 ];
 export const DataScienceData = [
   {
-    imgsrc: Digital,
     title: 'Data Science',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
@@ -151,8 +161,28 @@ export const DataScienceData = [
 ];
 export const WebDevData = [
   {
-    imgsrc: WebDesign,
     title: 'Web Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
+  },
+];
+export const WebDesignData = [
+  {
+    title: 'Web Design',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
+  },
+];
+export const AndriodsData = [
+  {
+    title: 'Android Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
+  },
+];
+export const FluttersData = [
+  {
+    title: 'Flutter Development',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum ipsum in lorem venenatis luctus. Curabitur eu risus id quam blandit pharetra. Maecenas maximus tempor augue, a egestas magna maximus in. Mauris vel tellus sapien. Proin luctus pulvinar diam. Nulla interdum neque nisl, eu eleifend massa auctor ac. Mauris tincidunt at erat ac lobortis.',
   },

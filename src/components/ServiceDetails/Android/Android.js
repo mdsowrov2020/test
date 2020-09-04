@@ -1,13 +1,15 @@
 import React from 'react';
 import RawCode from '../RawCode';
-import { DataScienceData } from '../../Data';
+import { AndriodsData } from '../../Data';
+import Android from '../../images/android_dev.jpg';
+import Flutter from '../../images/flutter.jpg';
 import Query from '../../Query';
-import DS_DETAIL_QUERY from '../../../queries/portfolio/datascience/datascience_details';
+import ANDROID_DETAIL_QUERY from '../../../queries/portfolio/android/android_details';
 
 export default function Androids(props) {
   return (
     <div>
-    <Query query={DS_DETAIL_QUERY} id={1}>
+    <Query query={ANDROID_DETAIL_QUERY} id={1}>
     {({ data: { portfolioDetail } }) => {
       var list=[];
       list.push(portfolioDetail);
