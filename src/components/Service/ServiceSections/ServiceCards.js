@@ -6,6 +6,10 @@ export const Web = (props) => {
     <>
       <div className='col-md-3 my-3 col-6'>
         <div className='webs'>
+        <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
           <div className='web_icon'>
             <h2>{props.icon}</h2>
           </div>
@@ -21,6 +25,10 @@ export const Mobile = (props) => {
     <>
       <div className='col-md-3 my-3 col-6'>
         <div className='mobile'>
+        <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
           <div className='mobile_icon'>
             <h2>{props.icon}</h2>
           </div>

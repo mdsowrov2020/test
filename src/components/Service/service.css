@@ -10,10 +10,10 @@
       rgba(0, 0, 0, 0.6) 50%,
       rgba(0, 0, 0, 0.6) 50%
     ),
-    url(../images/sea.jpg);
+    url(../images/service_banner.jpg);
   transition: all 0.5s linear;
   overflow: hidden;
-  height: 65vh;
+  height: 60vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -30,7 +30,7 @@
   width: 95%;
   overflow: hidden;
   position: relative;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@
         rgba(0, 0, 0, 0.5) 50%,
         rgba(0, 0, 0, 0.5) 50%
       ),
-      url(../images/sea.jpg);
+      url(../images/service_banner.jpg);
     height: 55vh;
     width: 100%;
     background-attachment: fixed;
@@ -97,7 +97,7 @@
     display: none;
     text-align: center;
   }
-  .sevice_banner_left_text h2 {
+  .sevice_banner_left_text h1 {
     font-size: 20px;
     font-weight: 700;
     text-align: center;

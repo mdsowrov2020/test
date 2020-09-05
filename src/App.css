@@ -60,6 +60,10 @@ body {
   padding: 0;
   outline: 0;
 } */
+::selection{
+  background-color: #000;
+  color: white;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -69,15 +73,24 @@ code {
 /* all button css start */
 .all-button {
   display: inline-block;
-}
 
+}
+.rec-dot {
+   display: none !important;
+ }
 .all-button .dm {
   height: 45px !important;
   width: 150px !important;
   line-height: 26px !important;
   border-radius: 30px !important;
 }
-
+.all-button:hover .home_btn_icon{
+  margin-left: 10px !important;
+}
+.home_btn_icon{
+  margin-left: 0px !important;
+    transition: all .5s linear;
+}
 .all-button a {
   position: relative;
   overflow: hidden;
@@ -93,7 +106,7 @@ code {
   ); */
   color: #fff;
   display: block;
-  border-radius: 18px;
+  border-radius: 4px;
   font-size: 14px;
   height: 52px;
   width: 170px;
@@ -106,7 +119,7 @@ code {
   -webkit-box-shadow: 1px 8px 32px -10px rgba(148, 146, 148, 1);
   -moz-box-shadow: 1px 8px 32px -10px rgba(148, 146, 148, 1);
   /* box-shadow: 1px 8px 32px -10px rgba(148, 146, 148, 1); */
-  border: 1px solid  #fff ;
+
 }
 .all_button a:hover{
   color: #ee0c81;
@@ -455,13 +468,85 @@ code {
 .data_sciences {
   text-align: center;
   border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
   padding: 15px 0px;
   -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
 }
+.data_sciences:hover {
+  background-color: #1B191A;
+  transition-delay: 0.56s;
+}
+.data_sciences span {
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.data_sciences:hover span:nth-child(1) {
+  left: 0;
+}
+.data_sciences span:nth-child(1) {
+  top: 0;
+  transition: all 0.5s linear;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, tomato);
+}
+
+.data_sciences:hover span:nth-child(1) {
+  left: 100%;
+}
+.data_sciences span:nth-child(3) {
+  bottom: 0;
+  transition: all 0.5s linear;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, tomato);
+}
+.data_sciences:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s;
+}
+.data_sciences span:nth-child(2) {
+  top: -100%;
+  transition: all 0.5s linear;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, tomato);
+}
+.data_sciences:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s;
+}
+.data_sciences span:nth-child(4) {
+  bottom: -100%;
+  transition: all 0.5s linear;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, tomato);
+}
+.data_sciences:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s;
+}
+.data_sciences:hover .ds_icon h2 {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+.data_sciences:hover p {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+/* =========================================== */
 .ds_icon h2 {
-  color: #02668f;
+  /* color: #02668f; */
+  color: #1B191A;
 }
 
 .service_demo_text h4 {
@@ -489,7 +574,8 @@ code {
 }
 
 .service_role_content h4 {
-  color: #109ea0;
+  /* color: #109ea0; */
+  color: tomato;
   font-size: 16px;
   text-align: left;
   font-weight: 700;
@@ -503,11 +589,82 @@ code {
   padding: 0px 35px;
 }
 .service_role_demo {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
   -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   padding: 10px 0px;
 }
+.service_role_demo:hover {
+  background-color: #1B191A;
+  transition-delay: 0.56s;
+}
+.service_role_demo span {
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.service_role_demo:hover span:nth-child(1) {
+  left: 0;
+}
+.service_role_demo span:nth-child(1) {
+  top: 0;
+  transition: all 0.5s linear;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, tomato);
+}
+
+.service_role_demo:hover span:nth-child(1) {
+  left: 100%;
+}
+.service_role_demo span:nth-child(3) {
+  bottom: 0;
+  transition: all 0.5s linear;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, tomato);
+}
+.service_role_demo:hover span:nth-child(3) {
+  right: 100%;
+  transition-delay: 0.5s;
+}
+.service_role_demo span:nth-child(2) {
+  top: -100%;
+  transition: all 0.5s linear;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,tomato);
+}
+.service_role_demo:hover span:nth-child(2) {
+  top: 100%;
+  transition-delay: 0.25s;
+}
+.service_role_demo span:nth-child(4) {
+  bottom: -100%;
+  transition: all 0.5s linear;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, tomato);
+}
+.service_role_demo:hover span:nth-child(4) {
+  bottom: 100%;
+  transition-delay: 0.75s;
+}
+.service_role_demo:hover .service_role_demo_image h2 {
+  color: #fff;
+  transition-delay: 0.56s;
+}
+.service_role_demo:hover .service_role_demo_text p {
+  color: #fff !important;
+  transition-delay: 0.56s;
+}
+/* ================================================ */
 
 .service_role_demo_image {
   margin: auto;
@@ -516,7 +673,8 @@ code {
 }
 
 .service_role_demo_image h2 {
-  color: #02668f;
+  /* color: #02668f; */
+  color: #1B191A;
   font-size: 30px;
 }
 
@@ -533,7 +691,8 @@ code {
 }
 
 .data_header h4 {
-  color: #109ea0;
+  /* color: #109ea0; */
+  color: tomato;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
@@ -650,8 +809,8 @@ code {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background: #012534;
-  color: #fff;
+  background: #1B191A;
+  color: tomato;
   line-height: 40px;
   text-align: center;
   position: fixed;
@@ -1979,13 +2138,13 @@ iframe {
 
 /* slider for team cards........ */
 .rec-arrow-left {
-  background-color: #385d77 !important;
+  background-color: #1B191A !important;
   color: tomato !important;
   outline: none !important;
   box-shadow: none !important;
 }
 .rec-arrow-right {
-  background-color: #385d77 !important;
+  background-color: #1B191A !important;
   color: tomato !important;
   outline: none !important;
   box-shadow: none !important;
@@ -1998,6 +2157,9 @@ iframe {
   .rec-arrow-right {
     display: none !important;
   }
+  .rec-dot {
+   display: block !important;
+ }
 }
 @media (max-width: 768px) {
   .rec-arrow-left {

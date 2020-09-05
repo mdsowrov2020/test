@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3c1629a.chunk.css",
-    "main.js": "/static/js/main.e83dc619.chunk.js",
-    "main.js.map": "/static/js/main.e83dc619.chunk.js.map",
+    "main.css": "/static/css/main.fd866b94.chunk.css",
+    "main.js": "/static/js/main.b521d8e7.chunk.js",
+    "main.js.map": "/static/js/main.b521d8e7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6847f719.js",
     "runtime-main.js.map": "/static/js/runtime-main.6847f719.js.map",
     "static/js/2.b8c48469.chunk.js": "/static/js/2.b8c48469.chunk.js",
     "static/js/2.b8c48469.chunk.js.map": "/static/js/2.b8c48469.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.177c7852816ea73923db5135dd9b7864.js": "/precache-manifest.177c7852816ea73923db5135dd9b7864.js",
+    "precache-manifest.deaf248cae0009a72865f9ed4b13f8dd.js": "/precache-manifest.deaf248cae0009a72865f9ed4b13f8dd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e3c1629a.chunk.css.map": "/static/css/main.e3c1629a.chunk.css.map",
+    "static/css/main.fd866b94.chunk.css.map": "/static/css/main.fd866b94.chunk.css.map",
     "static/js/2.b8c48469.chunk.js.LICENSE.txt": "/static/js/2.b8c48469.chunk.js.LICENSE.txt",
     "static/media/ArmanSir.jpg": "/static/media/ArmanSir.81ebc153.jpg",
     "static/media/android_dev.jpg": "/static/media/android_dev.0db703db.jpg",
@@ -23,9 +23,10 @@
     "static/media/passport.jpg": "/static/media/passport.5ee4eb95.jpg",
     "static/media/priceCommonBanner.png": "/static/media/priceCommonBanner.dc2014aa.png",
     "static/media/project.png": "/static/media/project.5e3978ea.png",
-    "static/media/service.css": "/static/media/sea.a75357dc.jpg",
+    "static/media/App.css": "/static/media/sea.a75357dc.jpg",
     "static/media/seo.png": "/static/media/seo.5477ec34.png",
     "static/media/service.png": "/static/media/service.f70a52d4.png",
+    "static/media/service.css": "/static/media/service_banner.9debad03.jpg",
     "static/media/social.jpg": "/static/media/social.37b581a8.jpg",
     "static/media/web_design.jpg": "/static/media/web_design.c55ca129.jpg",
     "static/media/web_dev.jpg": "/static/media/web_dev.1d1287fe.jpg"
@@ -33,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.6847f719.js",
     "static/js/2.b8c48469.chunk.js",
-    "static/css/main.e3c1629a.chunk.css",
-    "static/js/main.e83dc619.chunk.js"
+    "static/css/main.fd866b94.chunk.css",
+    "static/js/main.b521d8e7.chunk.js"
   ]
 }

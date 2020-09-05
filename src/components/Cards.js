@@ -17,9 +17,12 @@ export const Home_Banner = (props) => {
                 <h5>{props.heading}</h5>
                 <h1>{props.title}</h1>
                 <p>{props.pera}</p>
+                <Link className='nav-link dm' to='/portfolio'>
                 <div className='all-button slide-btn'>
-                  <a href='#'>explore</a>
+                  <a>Learn More    <i class="fa fa-angle-double-right home_btn_icon" aria-hidden="true"></i>
+                  </a>
                 </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -150,13 +153,17 @@ export const Card = (props) => {
 
 export const DigitalMarket = (props) => {
   return (
-    <div className='col-md-4 col-6  my-3'>
+    <div className='col-md-3 col-6  my-3'>
       <div className='service_role_demo px-1'>
+      <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
         <div className='service_role_demo_image'>
           <h2>{props.icon}</h2>
         </div>
         <div className='service_role_demo_text'>
-          <hp>{props.title}</hp>
+          <p>{props.title}</p>
         </div>
       </div>
     </div>
@@ -167,6 +174,10 @@ export const DataScience = (props) => {
   return (
     <div className='col-md-3 my-3 col-6'>
       <div className='data_sciences'>
+      <span></span>
+        <span></span>
+          <span></span>
+            <span></span>
         <div className='ds_icon'>
           <h2>{props.icon}</h2>
         </div>
@@ -225,11 +236,13 @@ export const Card_Four = (props) => {
             <p>{props.pera_three}</p>
             <p>{props.pera_four}</p>
             <p>{props.pera_five}</p>
+
           </div>
-          <div className='all-button pc'> //#ee0c81
+          <div className='all-button pc price_btn_price'> //#ee0c81
             <Link className='nav-link dm' to='/contact'>
-              Contact now
+
             </Link>
+
           </div>
         </div>
       </div>
