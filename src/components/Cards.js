@@ -265,7 +265,7 @@ export const PortfolioMain = (props) => {
           <div className='row'>
             <div className='col-md-12'>
               <div className='portfolio_header'>
-                <h2>Portfolio</h2>
+                <h2>{props.title}</h2>
               </div>
               <div className='port_details'>
                 <p>{props.details}</p>

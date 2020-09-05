@@ -17,6 +17,8 @@ import {
 import $ from 'jquery';
 import mixitup from 'mixitup';
 
+import Query from '../Query';
+import PORTFOLIO_PAGE_QUERY from '../../queries/portfolio/portfolio_page';
 export const Portfolio = (props) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -72,10 +74,26 @@ export const Portfolio = (props) => {
 
   return (
     <>
-      {PortfolioMainData.map((val, index) => {
-        return <PortfolioMain details={val.details} />;
+    <div>
+    <Query query={PORTFOLIO_PAGE_QUERY} id={null}>
+    {({ data: { portfolio } }) => {
+      var list=[];
+      list.push(portfolio);
+      return(
+        <div>
+      {list.map((val, index) => {
+        return (
+          <PortfolioMain
+            title= {val.Title}
+            details={val.Description}
+          />
+        );
       })}
-
+    </div>
+  );
+  }}
+      </Query>
+    </div>
       <div className='portfolio_svg'>
         <section className=' my-5 portfolio_section'>
           <div className='container'>

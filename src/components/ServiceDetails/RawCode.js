@@ -4,19 +4,17 @@ import { Link, NavLink } from 'react-router-dom';
 export default function RawCode(props) {
   return (
     <div>
-      <section>
+      <section className="container-fluid">
         <div className='container'>
           <div className='row justify-content-center'>
-            <div className='col-md-7 my-2'>
-              <div className='service_details_image'>
-                <img src={props.imgsrc}></img>
-              </div>
-              <div className='service_details_content'>
-                <h4 className='pt-3'>{props.title}</h4>
-                <p>{props.description}</p>
+            <div className='col-md-6 my-2'>
+              <div>
+                <p>
+                  <img src={props.imgsrc} className="img-fluid" alt="Responsive image"></img>
+                </p>
               </div>
             </div>
-            <div className='col-md-3 my-2'>
+            <div className='col-md-4 my-2'>
               <div className='recent_work'>
                 <div className='recent_work_content'>
                   <h4>
@@ -24,7 +22,7 @@ export default function RawCode(props) {
                   </h4>
                   <h4>
                     Recent Project:
-                    <span>{props.project_name}</span>
+                    <span> {props.project_name}</span>
                   </h4>
                   <h4>
                     Project URL:{' '}
@@ -63,6 +61,16 @@ export default function RawCode(props) {
           </div>
         </div>
       </section>
+      <div className='container'>
+        <div className='row content'>
+          <div className='col-md-7 my-2'>
+              <div className='service_details_content'>
+                <h4 className='pt-3'>{props.title}</h4>
+                <p>{props.description}</p>
+              </div>
+          </div>
+      </div>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { DataScienceData } from '../../Data';
 import Query from '../../Query';
 import DS_DETAIL_QUERY from '../../../queries/portfolio/datascience/datascience_details';
 
-export default function Androids(props) {
+export default function DataScience(props) {
   return (
     <div>
     <Query query={DS_DETAIL_QUERY} id={1}>

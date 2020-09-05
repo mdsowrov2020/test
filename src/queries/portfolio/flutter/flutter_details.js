@@ -1,9 +1,9 @@
 import gql from "graphql-tag";
 
-const DS_DETAIL_QUERY=gql`
-query ds_detailed_query
+const FLUTTER_DETAIL_QUERY=gql`
+query flutter_details_query
   {
-    portfolioDetail(id:"2"){
+    portfolioDetail(id:"4"){
    	id
     title
     description
@@ -17,4 +17,4 @@ query ds_detailed_query
   }
  }`;
 
-export default DS_DETAIL_QUERY;
+export default FLUTTER_DETAIL_QUERY;

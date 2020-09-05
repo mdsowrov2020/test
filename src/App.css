@@ -77,9 +77,6 @@ code {
   line-height: 26px !important;
   border-radius: 30px !important;
 }
-/* .all-button .pc {
-  background-color: #ee0c81;
-} */
 
 .all-button a {
   position: relative;
@@ -1205,7 +1202,7 @@ code {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-/*
+
 .mfp-iframe-scaler {
   height: 100% !important;
   position: fixed;
@@ -1245,7 +1242,7 @@ iframe {
 }
 .mfp-preloader {
   display: none !important;
-} */
+}
 
 .video-popup {
   position: fixed;
@@ -1605,6 +1602,10 @@ iframe {
 .service_details_image img {
   height: 100%;
   width: 100%;
+}
+.service_details_image .img-fluid{
+  mobile_height:50%;
+  mobile_width: 50%
 }
 .service_details_content h4 {
   color: #484848;

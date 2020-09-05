@@ -1,9 +1,9 @@
 import gql from "graphql-tag";
 
-const DS_DETAIL_QUERY=gql`
-query ds_detailed_query
+const WEBDEV_DETAIL_QUERY=gql`
+query web_design_details_query
   {
-    portfolioDetail(id:"2"){
+    portfolioDetail(id:"6"){
    	id
     title
     description
@@ -17,4 +17,4 @@ query ds_detailed_query
   }
  }`;
 
-export default DS_DETAIL_QUERY;
+export default WEBDEV_DETAIL_QUERY;
