@@ -293,7 +293,7 @@ export const Portfolio = (props) => {
           id='video'
           class='py-5'
           style={{
-            backgroundImage: `url(${require('../images/ocean_price.jpg')})`,
+            backgroundImage: `url(${require('../images/video_background.jpg')})`,
           }}
         >
           <div class='container'>

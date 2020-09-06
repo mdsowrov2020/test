@@ -133,14 +133,14 @@ code {
 /* nav start */
 .custom_nav img {
   height: 40px;
-  width: 180px;
+  width: 200px;
 }
 #mynav ul li.nav_active a {
   color: tomato !important;
   font-weight: 700 !important;
 }
 .navbar-toggler-icon i {
-  color: #012534 !important;
+  color: #1B191A !important;
   font-size: 25px;
 }
 .custom_nav {

@@ -28,13 +28,13 @@ export default function ServiceBanner(props) {
                         <span>
                           <i class='fas fa-heart'></i> Digital
                         </span>
-                        Marketting
+                        Marketing
                       </p>
                     </div>
                     <div className='service_banner_card_image'>
-                      <img src={Social}></img>
+                      <img src={Social} className="img-fluid"></img>
                       <div className='service_banner_card_image_overlay'>
-                        <p>DIgital Marketting</p>
+                        <p>Digital Marketing</p>
                       </div>
                     </div>
                   </div>
