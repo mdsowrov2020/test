@@ -2,15 +2,23 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function RawCode(props) {
+  function myFunction() {
+    var element = document.getElementById('mobile_toggle_id');
+    element.classList.toggle('mobile_toggle');
+  }
   return (
     <div>
-      <section className="container-fluid">
+      <section className='mobile_height container-fluid'>
         <div className='container'>
           <div className='row justify-content-center'>
             <div className='col-md-6 my-2'>
               <div>
                 <p>
-                  <img src={props.imgsrc} className="img-fluid" alt="Responsive image"></img>
+                  <img
+                    src={props.imgsrc}
+                    className='img-fluid'
+                    alt='Responsive image'
+                  ></img>
                 </p>
               </div>
             </div>
@@ -35,27 +43,34 @@ export default function RawCode(props) {
                 </div>
               </div>
             </div>
-            <div className='col-md-2 my-2'>
+            <div className='col-md-2 col-12 my-2'>
               <div className='other_portfolio'>
-                <h5 className='other_services'>Other Services</h5>
-                <h5>
-                  <Link to='/digitalMarket'>Digital Marketing</Link>
+                <h5 className='other_services' onClick={myFunction}>
+                  Other Services
+                  <span>
+                    <i class='fas fa-chevron-down mobile_toggle_icon'></i>
+                  </span>
                 </h5>
-                <h5>
-                  <Link to='/dataScience'>Data Science</Link>
-                </h5>
-                <h5>
-                  <Link to='/webDev'>Web Development</Link>
-                </h5>
-                <h5>
-                  <Link to='/webDesign'>Web Design</Link>
-                </h5>
-                <h5>
-                  <Link to='/Androids'>Android Development</Link>
-                </h5>
-                <h5>
-                  <Link to='/Flutter'>Flutter Development</Link>
-                </h5>
+                <div className='mobile_toggle' id='mobile_toggle_id'>
+                  <h5>
+                    <Link to='/digitalMarket'>Digital Marketing</Link>
+                  </h5>
+                  <h5>
+                    <Link to='/dataScience'>Data Science</Link>
+                  </h5>
+                  <h5>
+                    <Link to='/webDev'>Web Development</Link>
+                  </h5>
+                  <h5>
+                    <Link to='/webDesign'>Web Design</Link>
+                  </h5>
+                  <h5>
+                    <Link to='/Androids'>Android Development</Link>
+                  </h5>
+                  <h5>
+                    <Link to='/Flutter'>Flutter Development</Link>
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
@@ -64,12 +79,12 @@ export default function RawCode(props) {
       <div className='container'>
         <div className='row content'>
           <div className='col-md-7 my-2'>
-              <div className='service_details_content'>
-                <h4 className='pt-3'>{props.title}</h4>
-                <p>{props.description}</p>
-              </div>
+            <div className='service_details_content'>
+              <h4 className='pt-3'>{props.title}</h4>
+              <p>{props.description}</p>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   );

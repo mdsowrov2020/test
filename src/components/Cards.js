@@ -18,10 +18,15 @@ export const Home_Banner = (props) => {
                 <h1>{props.title}</h1>
                 <p>{props.pera}</p>
                 <Link className='nav-link dm' to='/portfolio'>
-                <div className='all-button slide-btn'>
-                  <a>Learn More    <i class="fa fa-angle-double-right home_btn_icon" aria-hidden="true"></i>
-                  </a>
-                </div>
+                  <div className='all-button slide-btn'>
+                    <a>
+                      Learn More{' '}
+                      <i
+                        class='fa fa-angle-double-right home_btn_icon'
+                        aria-hidden='true'
+                      ></i>
+                    </a>
+                  </div>
                 </Link>
               </div>
             </div>
@@ -155,10 +160,10 @@ export const DigitalMarket = (props) => {
   return (
     <div className='col-md-3 col-6  my-3'>
       <div className='service_role_demo px-1'>
-      <span></span>
-     <span></span>
-     <span></span>
-     <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <div className='service_role_demo_image'>
           <h2>{props.icon}</h2>
         </div>
@@ -174,10 +179,10 @@ export const DataScience = (props) => {
   return (
     <div className='col-md-3 my-3 col-6'>
       <div className='data_sciences'>
-      <span></span>
         <span></span>
-          <span></span>
-            <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <div className='ds_icon'>
           <h2>{props.icon}</h2>
         </div>
@@ -214,7 +219,7 @@ export const Price_Banner = (props) => {
 //=======================================PRICE CARD=================================//
 export const Card_Four = (props) => {
   return (
-    <div className='col-md-12  px-3 my-2'>
+    <div className='col-md-4  my-2'>
       <div className='price_main_content text-center'>
         <div className='price_left_inner price_common'>
           <div className='price_basic_head'>
@@ -236,13 +241,11 @@ export const Card_Four = (props) => {
             <p>{props.pera_three}</p>
             <p>{props.pera_four}</p>
             <p>{props.pera_five}</p>
-
           </div>
-          <div className='all-button pc price_btn_price'> //#ee0c81
-            <Link className='nav-link dm' to='/contact'>
-
-            </Link>
-
+          <div className='all-button pc price_btn_price'>
+            {' '}
+            //#ee0c81
+            <Link className='nav-link dm' to='/contact'></Link>
           </div>
         </div>
       </div>
@@ -273,7 +276,7 @@ export const Card_Eight = (props) => {
 export const PortfolioMain = (props) => {
   return (
     <>
-      <section>
+      <section className='mobile_height'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-12'>

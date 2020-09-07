@@ -16,26 +16,25 @@ export default function FlutterApp(props) {
 
       <section>
         <div className='container'>
-          <div className='row'>
+          <div className='row justify-content-center'>
             <div className='col-md-12'></div>
             <Query query={FLUTTER_DEVELOPMENT_PRICE_QUERY} id={null}>
-            {({ data: { pricing } }) => {
-              return(
-              <div className="container row center">
-            {pricing.Plans.map((val, index) => {
-              return (
-                <PriceCommonCard
-                  heading={val.Package}
-                  imgsrc={val.imgsrc.url}
-                  price={val.Amount}
-                  service_one={val.Description}
-
-                />
-              );
-            })}
-            </div>
-            );
-            }}
+              {({ data: { pricing } }) => {
+                return (
+                  <div className='container row justify-content-center'>
+                    {pricing.Plans.map((val, index) => {
+                      return (
+                        <PriceCommonCard
+                          heading={val.Package}
+                          imgsrc={val.imgsrc.url}
+                          price={val.Amount}
+                          service_one={val.Description}
+                        />
+                      );
+                    })}
+                  </div>
+                );
+              }}
             </Query>
           </div>
         </div>

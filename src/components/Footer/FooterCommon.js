@@ -1,10 +1,9 @@
 import React from 'react';
 import './footer.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const FooterCommon = (props) => {
   return (
     <>
-
       <section className='pt-5 footer_bg'>
         <div className='container'>
           <div className='row justify-content-center'>
@@ -49,20 +48,19 @@ const FooterCommon = (props) => {
                 </div>
                 <ul>
                   <li>
-                      <Link to='/'>Home</Link>
+                    <Link to='/'>Home</Link>
                   </li>
                   <li>
-                      <Link to='/services'>Service</Link>
+                    <Link to='/services'>Service</Link>
                   </li>
                   <li>
-                      <Link to='/price'>Price</Link>
+                    <Link to='/price'>Price</Link>
                   </li>
                   <li>
-                      <Link to='/portfolio'>Portfolio</Link>
+                    <Link to='/portfolio'>Portfolio</Link>
                   </li>
                   <li>
-                  <Link to='/contact'>Contact</Link>
-
+                    <Link to='/contact'>Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -73,7 +71,7 @@ const FooterCommon = (props) => {
                   <h4>{props.contact_footer_heading}</h4>
                 </div>
                 <div className='row d-flex align-items-center'>
-                  <div className='col-md-10'>
+                  <div className='col-md-12'>
                     <div className='phone_num'>
                       <ul>
                         <li>
@@ -99,7 +97,7 @@ const FooterCommon = (props) => {
                   </div>
                 </div>
                 <div className='row d-flex align-items-center '>
-                  <div className='col-md-10'>
+                  <div className='col-md-12'>
                     <div className='email'>
                       <ul>
                         <li>

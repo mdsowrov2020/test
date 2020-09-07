@@ -42,7 +42,7 @@ export class Contact extends Component {
   render() {
     return (
       <div>
-        <section className='contact_banner contact_section'>
+        <section className='mobile_height contact_banner contact_section'>
           <div className='container'>
             <div className='row justify-content-center'>
               <div className='col-lg-6 order-2 order-lg-1'>

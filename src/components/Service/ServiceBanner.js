@@ -11,7 +11,7 @@ import Passport from '../images/passport.jpg';
 export default function ServiceBanner(props) {
   return (
     <>
-      <section>
+      <section className='service_banner_mobile'>
         <div className='service_banner_image d-flex align-items-center'>
           <div className='container'>
             <div className='row justify-content-center d-flex align-items-center'>
@@ -32,7 +32,7 @@ export default function ServiceBanner(props) {
                       </p>
                     </div>
                     <div className='service_banner_card_image'>
-                      <img src={Social} className="img-fluid"></img>
+                      <img src={Social} className='img-fluid'></img>
                       <div className='service_banner_card_image_overlay'>
                         <p>Digital Marketing</p>
                       </div>

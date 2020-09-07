@@ -40,7 +40,7 @@ function App() {
   return (
     <React.Fragment>
       <Menu />
-      <Planets color={'#FF6347'} time={3500} animation='slide' size="10px" />
+      <Planets color={'#FF6347'} time={3500} animation='slide' size='10px' />
       <Switch>
         <Route exact path='/digitalMarket' component={DigitalMarket} />
         <Route exact path='/dataScience' component={DataScience} />

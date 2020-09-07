@@ -7,7 +7,7 @@ import { Sidebar } from './Sidebar';
 export const Blog = (props) => {
   return (
     <div>
-      <section className='pb-3'>
+      <section className='pb-3 mobile_height'>
         <div className='blog_banner d-flex align-items-center'>
           <div className='container'>
             <div className='row justify-content-center'>
