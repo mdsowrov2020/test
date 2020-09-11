@@ -16,7 +16,7 @@
   box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
 }
 .webs:hover {
-  background-color: #1B191A;
+  background-color: #1b191a;
   transition-delay: 0.56s;
 }
 .webs span {
@@ -32,7 +32,7 @@
   left: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, transparent, tomato);
+  background: linear-gradient(90deg, transparent, #e4002d);
 }
 
 .webs:hover span:nth-child(1) {
@@ -44,7 +44,7 @@
   right: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(270deg, transparent, tomato);
+  background: linear-gradient(270deg, transparent, #e4002d);
 }
 .webs:hover span:nth-child(3) {
   right: 100%;
@@ -56,7 +56,7 @@
   right: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, tomato);
+  background: linear-gradient(180deg, transparent, #e4002d);
 }
 .webs:hover span:nth-child(2) {
   top: 100%;
@@ -68,7 +68,7 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(360deg, transparent,tomato);
+  background: linear-gradient(360deg, transparent, #e4002d);
 }
 .webs:hover span:nth-child(4) {
   bottom: 100%;
@@ -85,7 +85,7 @@
 /* new animation end */
 .web_section_head h4 {
   /* color: #109ea0; */
-  color: tomato;
+  color: #e4002d;
   font-size: 16px;
   transition: all 0.5s linear;
   font-weight: 700;
@@ -94,12 +94,12 @@
 
 .web_icon h2 {
   /* color: #02668f; */
-  color: #1B191A;
+  color: #1b191a;
   transition: all 0.5s linear;
 }
 .mobile_icon h2 {
   /* color: #02668f; */
-  color: #1B191A;
+  color: #1b191a;
 }
 .mobile {
   text-align: center;
@@ -119,7 +119,7 @@
   text-transform: uppercase;
 }
 .mobile:hover {
-  background-color:#1B191A;
+  background-color: #1b191a;
   transition-delay: 0.56s;
 }
 .mobile span {
@@ -135,7 +135,7 @@
   left: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, transparent, tomato);
+  background: linear-gradient(90deg, transparent, #e4002d);
 }
 
 .mobile:hover span:nth-child(1) {
@@ -147,7 +147,7 @@
   right: -100%;
   width: 100%;
   height: 4px;
-  background: linear-gradient(270deg, transparent, tomato);
+  background: linear-gradient(270deg, transparent, #e4002d);
 }
 .mobile:hover span:nth-child(3) {
   right: 100%;
@@ -159,7 +159,7 @@
   right: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg, transparent,tomato);
+  background: linear-gradient(180deg, transparent, #e4002d);
 }
 .mobile:hover span:nth-child(2) {
   top: 100%;
@@ -171,7 +171,7 @@
   left: 0;
   width: 4px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, tomato);
+  background: linear-gradient(360deg, transparent, #e4002d);
 }
 .mobile:hover span:nth-child(4) {
   bottom: 100%;

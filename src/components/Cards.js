@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import HomeBanner from './images/seo.png';
+import HomeBanner from './images/home.png';
 import ContactBanner from './images/contact.png';
 import Carousel from 'react-elastic-carousel';
 
@@ -17,17 +17,25 @@ export const Home_Banner = (props) => {
                 <h5>{props.heading}</h5>
                 <h1>{props.title}</h1>
                 <p>{props.pera}</p>
-                <Link className='nav-link dm' to='/portfolio'>
-                  <div className='all-button slide-btn'>
-                    <a>
-                      Learn More{' '}
-                      <i
-                        class='fa fa-angle-double-right home_btn_icon'
-                        aria-hidden='true'
-                      ></i>
-                    </a>
-                  </div>
-                </Link>
+
+                <div className='all-button slide-btn mr-2'>
+                  <Link to='/portfolio'>
+                    Learn More
+                    <i
+                      class='fa fa-angle-double-right home_btn_icon'
+                      aria-hidden='true'
+                    ></i>
+                  </Link>
+                </div>
+                <div className='all-button slide-btn'>
+                  <Link to='/contact'>
+                    Contact Now
+                    <i
+                      class='fa fa-angle-double-right home_btn_icon'
+                      aria-hidden='true'
+                    ></i>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

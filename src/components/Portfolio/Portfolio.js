@@ -74,26 +74,26 @@ export const Portfolio = (props) => {
 
   return (
     <>
-    <div>
-    <Query query={PORTFOLIO_PAGE_QUERY} id={null}>
-    {({ data: { portfolio } }) => {
-      var list=[];
-      list.push(portfolio);
-      return(
-        <div>
-      {list.map((val, index) => {
-        return (
-          <PortfolioMain
-            title= {val.Title}
-            details={val.Description}
-          />
-        );
-      })}
-    </div>
-  );
-  }}
-      </Query>
-    </div>
+      <div>
+        <Query query={PORTFOLIO_PAGE_QUERY} id={null}>
+          {({ data: { portfolio } }) => {
+            var list = [];
+            list.push(portfolio);
+            return (
+              <div>
+                {list.map((val, index) => {
+                  return (
+                    <PortfolioMain
+                      title={val.Title}
+                      details={val.Description}
+                    />
+                  );
+                })}
+              </div>
+            );
+          }}
+        </Query>
+      </div>
       <div className='portfolio_svg'>
         <section className=' my-5 portfolio_section'>
           <div className='container'>
@@ -118,7 +118,10 @@ export const Portfolio = (props) => {
             </div>
 
             <div className='row project_main justify-content-center'>
-              <div className='col-md-4 col-6 my-1 px-1 mix digital_marketing'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix digital_marketing'
+                data-filter='.digital_marketing'
+              >
                 <div className='project_image'>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_dm_one} className='img-fluid' />;
@@ -130,12 +133,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/digitalMarket'>
                             <i class='fa fa-link' aria-hidden='true'></i>
@@ -146,7 +144,10 @@ export const Portfolio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 col-6 my-1 px-1 mix data_science'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix data_science'
+                data-filter='.data_science'
+              >
                 <div className='project_image' onClick={handleShow}>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_dm_two} className='img-fluid' />;
@@ -158,12 +159,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/dataScience'>
                             <i class='fa fa-link' aria-hidden='true'></i>
@@ -174,7 +170,10 @@ export const Portfolio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 col-6 my-1 px-1 mix web'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix web'
+                data-filter='.web'
+              >
                 <div className='project_image' onClick={handleShow}>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_dm_three} className='img-fluid' />;
@@ -186,12 +185,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/webDev'>
                             <i class='fa fa-link' aria-hidden='true'></i>
@@ -202,7 +196,10 @@ export const Portfolio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 col-6 my-1 px-1 mix web'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix web'
+                data-filter='.web'
+              >
                 <div className='project_image' onClick={handleShow}>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_ds_one} className='img-fluid' />;
@@ -214,12 +211,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/webDesign'>
                             <i class='fa fa-link' aria-hidden='true'></i>
@@ -230,7 +222,10 @@ export const Portfolio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 col-6 my-1 px-1 mix app'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
                 <div className='project_image' onClick={handleShow}>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_ds_two} className='img-fluid' />;
@@ -242,12 +237,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/Androids'>
                             <i class='fa fa-link' aria-hidden='true'></i>
@@ -258,7 +248,10 @@ export const Portfolio = (props) => {
                   </div>
                 </div>
               </div>
-              <div className='col-md-4 col-6 my-1 px-1 mix app'>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
                 <div className='project_image' onClick={handleShow}>
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_ds_three} className='img-fluid' />;
@@ -270,12 +263,7 @@ export const Portfolio = (props) => {
                   </div>
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
-                      <div className='col-md-6 col-6'>
-                        <span className='click'>
-                          <i class='fas fa-plus'></i>
-                        </span>
-                      </div>
-                      <div className='col-md-6 col-6'>
+                      <div className='col-md-12 col-12'>
                         <span className='click'>
                           <Link to='/Flutter'>
                             <i class='fa fa-link' aria-hidden='true'></i>
