@@ -7,7 +7,7 @@ import WebDev from '../images/web_dev.jpg';
 import Android from '../images/android_dev.jpg';
 import Flutter from '../images/flutter.jpg';
 import Passport from '../images/passport.jpg';
-
+import Digim from '../images/digital.png';
 export default function ServiceBanner(props) {
   return (
     <>
@@ -21,6 +21,13 @@ export default function ServiceBanner(props) {
                 </div>
               </div>
               <div className='col-md-6'>
+                <div className='row justify-content-center'>
+                <div className='service_banner_bg'>
+                  <img src={Digim} className='img-fluid animated'></img>
+                  </div>
+                </div>
+              </div>
+            {/*  <div className='col-md-6'>
                 <div className='row justify-content-center'>
                   <div className='col-md-4 col-6 py-2 px-2'>
                     <div className='hidden_content'>
@@ -119,7 +126,7 @@ export default function ServiceBanner(props) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

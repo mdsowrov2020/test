@@ -54,7 +54,7 @@ body {
 }
 /* =============================all clor variable ============================ */
 :root {
-  --backgroundColor: #1b191a;
+  --backgroundColor: #01082d;
   --secondCloro: #ED194E;
   --peragraphColor: #484848;
 }
@@ -123,7 +123,7 @@ code {
   box-shadow: 1px 8px 32px -10px rgba(148, 146, 148, 1); */
 }
 .all_button a:hover {
-  color: #ee0c81;
+  color: #ED194E ;
   background-color: #fff;
 }
 .all_header h1 {
@@ -317,9 +317,13 @@ code {
   border-style: dashed; */
   padding: 8px 0px;
   text-align: center;
+  -webkit-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  /* text-align: center;
   -webkit-box-shadow: 0px 0px 152px -21px rgba(227, 224, 227, 1);
   -moz-box-shadow: 0px 0px 152px -21px rgba(227, 224, 227, 1);
-  box-shadow: 0px 0px 152px -21px rgba(227, 224, 227, 1);
+  box-shadow: 0px 0px 152px -21px rgba(227, 224, 227, 1); */
   /* border: 1px solid #d1d1d1; */
 }
 .digital_part:hover {
@@ -480,9 +484,12 @@ code {
   overflow: hidden;
   transition: all 0.5s linear;
   padding: 15px 0px;
-  -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
+  -webkit-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  /* -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
-  box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
+  box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1); */
 }
 .data_sciences:hover {
   background-color: #1b191a;
@@ -600,10 +607,13 @@ code {
   position: relative;
   overflow: hidden;
   transition: all 0.5s linear;
-  -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
+  -webkit-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 6px 16px -5px rgba(0, 0, 0, 0.66);
+  /* -webkit-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   -moz-box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
   box-shadow: 0px 3px 31px 0px rgba(235, 235, 235, 1);
-  padding: 10px 0px;
+  padding: 10px 0px; */
 }
 .service_role_demo:hover {
   background-color: #1b191a;
@@ -1271,7 +1281,7 @@ code {
 .custom_button {
   border: transparent !important;
   color: #fff !important;
-  background-color:var(--secondCloro); 
+  background-color:var(--secondCloro);
   height: 45px !important;
   border-radius: 8px;
 }
