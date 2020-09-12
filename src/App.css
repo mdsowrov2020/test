@@ -55,7 +55,7 @@ body {
 /* =============================all clor variable ============================ */
 :root {
   --backgroundColor: #1b191a;
-  --secondCloro: #e2005c;
+  --secondCloro: #ED194E;
   --peragraphColor: #484848;
 }
 /* *{
@@ -1271,14 +1271,7 @@ code {
 .custom_button {
   border: transparent !important;
   color: #fff !important;
-  background-image: linear-gradient(
-    to top,
-    #012534,
-    #003a50,
-    #00506f,
-    #02668f,
-    #0b7eb0
-  );
+  background-color:var(--secondCloro); 
   height: 45px !important;
   border-radius: 8px;
 }

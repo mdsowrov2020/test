@@ -89,11 +89,11 @@ export class Menu extends Component {
                   Portfolio
                 </Link>
               </li>
-              <li className='nav-item'>
+              {/*<li className='nav-item'>
                 <NavLink className='nav-link hide_nav' to='/blog'>
                   Blog
                 </NavLink>
-              </li>
+              </li>*/}
               <li className='nav-item'>
                 <Link className='nav-link hide_nav' to='/contact'>
                   Contact
