@@ -55,7 +55,7 @@ body {
 /* =============================all clor variable ============================ */
 :root {
   --backgroundColor: #1b191a;
-  --secondCloro: #e4002d;
+  --secondCloro: #e2005c;
   --peragraphColor: #484848;
 }
 /* *{
@@ -193,7 +193,7 @@ code {
   background-color: var(--secondCloro) !important;
 }
 .sticky .navbar-toggler-icon i {
-  color: #fff !important;
+  color: var(--secondCloro) !important;
   outline: none !important;
   box-shadow: none !important;
 }

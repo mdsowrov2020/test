@@ -34,6 +34,7 @@ export const HomeSecondSectionData = [
     pera:
       'Once online, we help track how effective your marketing is, and make adjustments to improve results over time',
   },
+
   {
     link: '/dataSciencePrice',
     icon: <i class='fas fa-database'></i>,
