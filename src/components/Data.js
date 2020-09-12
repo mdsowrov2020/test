@@ -493,17 +493,89 @@ export const Portfolio_Banner_Right_Data = [
     imgsrc: PortfolioBanner,
   },
 ];
-export const Portfolio_Content_Data = [
+export const digitalMarketingUrl = [
   {
-    img_dm_one: Social,
-    img_dm_two: Digital,
-    img_dm_three: WebDesign,
-    img_ds_one: WebDev,
-    img_ds_two: Android,
-    img_ds_three: Flutter,
+    imgsrc: Social,
+    url: 'http://desha-ngo.somikoron.com/',
+    url_name: 'Digital Marketing',
+  },
+];
+export const DataScienceUrl = [
+  {
+    imgsrc: Digital,
+    url: 'https://somikoron.com/',
+    url_name: 'Data Science',
+  },
+];
+export const WebDevUrlOne = [
+  {
+    imgsrc: WebDesign,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const WebDevUrlTwo = [
+  {
+    imgsrc: WebDev,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const WebDevUrlThree = [
+  {
+    imgsrc: WebDev,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const WebDevUrlFour = [
+  {
+    imgsrc: WebDesign,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const WebDevUrlFive = [
+  {
+    imgsrc: WebDev,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const AndroidUrlOne = [
+  {
+    imgsrc: Android,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const AndroidUrlTwo = [
+  {
+    imgsrc: Flutter,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const AndroidUrlThree = [
+  {
+    imgsrc: Android,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
+  },
+];
+export const AndroidUrlFour = [
+  {
+    imgsrc: Flutter,
+    url: 'https://somikoron.com/',
+    url_name: 'Somikoron e-commerce',
   },
 ];
 
+// img_dm_two: Digital,
+// img_dm_three: WebDesign,
+// img_ds_one: WebDev,
+// img_ds_two: Android,
+// img_ds_three: Flutter,
 // ========================================== Portfolio part End========================
 
 // ========================================== Contact part Start =========================

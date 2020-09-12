@@ -55,7 +55,7 @@ body {
 /* =============================all clor variable ============================ */
 :root {
   --backgroundColor: #01082d;
-  --secondCloro: #ED194E;
+  --secondCloro: #ed194e;
   --peragraphColor: #484848;
 }
 /* *{
@@ -123,7 +123,7 @@ code {
   box-shadow: 1px 8px 32px -10px rgba(148, 146, 148, 1); */
 }
 .all_button a:hover {
-  color: #ED194E ;
+  color: #ed194e;
   background-color: #fff;
 }
 .all_header h1 {
@@ -331,7 +331,7 @@ code {
   /* background-color: #003761; */
   /* background-color: #1b191a; */
   /* background-image: linear-gradient(to left top, #012a27, #002730, #00223c, #001b43, #030e40); */
-  transition: all 0.2s linear;
+  transition: all 0.5s linear;
   border: none;
 }
 .digital_part:hover .digital_icon h3 {
@@ -367,7 +367,7 @@ code {
 
 .digital_text_content {
   text-align: center;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .digital_part:hover .digital_text_content h4 {
   color: var(--secondCloro);
@@ -1281,7 +1281,7 @@ code {
 .custom_button {
   border: transparent !important;
   color: #fff !important;
-  background-color:var(--secondCloro);
+  background-color: var(--secondCloro);
   height: 45px !important;
   border-radius: 8px;
 }
@@ -1472,7 +1472,7 @@ iframe {
 }
 .project_image:hover .overlay {
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .project_image:hover img {
   transform: scale(1.2);
@@ -1494,8 +1494,8 @@ iframe {
 
 .overlay .click a {
   line-height: 55px;
-  font-size: 25px;
-  color: #fff !important;
+  font-size: 22px;
+  color: var(--peragraphColor) !important;
 }
 .overlay_top {
   position: absolute;

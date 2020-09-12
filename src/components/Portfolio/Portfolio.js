@@ -9,9 +9,17 @@ import {
   Portfolio_Content,
 } from '../Cards';
 import {
-  Portfolio_Banner_Left_Data,
-  PortfolioMainData,
-  Portfolio_Content_Data,
+  WebDevUrlOne,
+  WebDevUrlTwo,
+  WebDevUrlThree,
+  WebDevUrlFour,
+  WebDevUrlFive,
+  DataScienceUrl,
+  digitalMarketingUrl,
+  AndroidUrlOne,
+  AndroidUrlTwo,
+  AndroidUrlThree,
+  AndroidUrlFour,
   Video_Data,
 } from '../Data';
 import $ from 'jquery';
@@ -122,107 +130,267 @@ export const Portfolio = (props) => {
                 className='col-md-4 col-6 my-1 px-1 mix digital_marketing'
                 data-filter='.digital_marketing'
               >
-                <div className='project_image'>
-                  {Portfolio_Content_Data.map((val) => {
-                    return <img src={val.img_dm_one} className='img-fluid' />;
-                  })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Digital Marketing</h4>
-                    </div>
-                  </div>
-                  <div className='overlay' onClick={handleShow}>
-                    <div className='row justify-content-between'>
-                      <div className='col-md-12 col-12'>
-                        <span className='click'>
-                          <Link to='/digitalMarket'>
-                            <i class='fa fa-link' aria-hidden='true'></i>
-                          </Link>
-                        </span>
+                {digitalMarketingUrl.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
               <div
                 className='col-md-4 col-6 my-1 px-1 mix data_science'
                 data-filter='.data_science'
               >
-                <div className='project_image' onClick={handleShow}>
-                  {Portfolio_Content_Data.map((val) => {
-                    return <img src={val.img_dm_two} className='img-fluid' />;
-                  })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Data Science</h4>
-                    </div>
-                  </div>
-                  <div className='overlay' onClick={handleShow}>
-                    <div className='row justify-content-between'>
-                      <div className='col-md-12 col-12'>
-                        <span className='click'>
-                          <Link to='/dataScience'>
-                            <i class='fa fa-link' aria-hidden='true'></i>
-                          </Link>
-                        </span>
+                {DataScienceUrl.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
               <div
                 className='col-md-4 col-6 my-1 px-1 mix web'
                 data-filter='.web'
               >
-                <div className='project_image' onClick={handleShow}>
-                  {Portfolio_Content_Data.map((val) => {
-                    return <img src={val.img_dm_three} className='img-fluid' />;
-                  })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Web Development</h4>
-                    </div>
-                  </div>
-                  <div className='overlay' onClick={handleShow}>
-                    <div className='row justify-content-between'>
-                      <div className='col-md-12 col-12'>
-                        <span className='click'>
-                          <Link to='/webDev'>
-                            <i class='fa fa-link' aria-hidden='true'></i>
-                          </Link>
-                        </span>
+                {WebDevUrlOne.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
               <div
                 className='col-md-4 col-6 my-1 px-1 mix web'
                 data-filter='.web'
               >
-                <div className='project_image' onClick={handleShow}>
-                  {Portfolio_Content_Data.map((val) => {
-                    return <img src={val.img_ds_one} className='img-fluid' />;
-                  })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Web Design</h4>
-                    </div>
-                  </div>
-                  <div className='overlay' onClick={handleShow}>
-                    <div className='row justify-content-between'>
-                      <div className='col-md-12 col-12'>
-                        <span className='click'>
-                          <Link to='/webDesign'>
-                            <i class='fa fa-link' aria-hidden='true'></i>
-                          </Link>
-                        </span>
+                {WebDevUrlTwo.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
               <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
+                {AndroidUrlOne.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix web'
+                data-filter='.web'
+              >
+                {WebDevUrlFive.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix web'
+                data-filter='.web'
+              >
+                {WebDevUrlThree.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix web'
+                data-filter='.web'
+              >
+                {WebDevUrlFour.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
+                {AndroidUrlTwo.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
+                {AndroidUrlThree.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div
+                className='col-md-4 col-6 my-1 px-1 mix app'
+                data-filter='.app'
+              >
+                {AndroidUrlFour.map((val, index) => {
+                  return (
+                    <div className='project_image'>
+                      <img src={val.imgsrc} className='img-fluid' />
+
+                      <div className='overlay' onClick={handleShow}>
+                        <div className='row justify-content-between'>
+                          <div className='col-md-12 col-12'>
+                            <span className='click'>
+                              <a href={val.url} target='_blank'>
+                                {val.url_name}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              {/* <div
                 className='col-md-4 col-6 my-1 px-1 mix app'
                 data-filter='.app'
               >
@@ -230,11 +398,7 @@ export const Portfolio = (props) => {
                   {Portfolio_Content_Data.map((val) => {
                     return <img src={val.img_ds_two} className='img-fluid' />;
                   })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Android Development</h4>
-                    </div>
-                  </div>
+
                   <div className='overlay' onClick={handleShow}>
                     <div className='row justify-content-between'>
                       <div className='col-md-12 col-12'>
@@ -247,33 +411,7 @@ export const Portfolio = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className='col-md-4 col-6 my-1 px-1 mix app'
-                data-filter='.app'
-              >
-                <div className='project_image' onClick={handleShow}>
-                  {Portfolio_Content_Data.map((val) => {
-                    return <img src={val.img_ds_three} className='img-fluid' />;
-                  })}
-                  <div className='overlay_top d-flex align-items-center'>
-                    <div className='service_name'>
-                      <h4>Flutter</h4>
-                    </div>
-                  </div>
-                  <div className='overlay' onClick={handleShow}>
-                    <div className='row justify-content-between'>
-                      <div className='col-md-12 col-12'>
-                        <span className='click'>
-                          <Link to='/Flutter'>
-                            <i class='fa fa-link' aria-hidden='true'></i>
-                          </Link>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

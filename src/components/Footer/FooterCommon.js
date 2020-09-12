@@ -9,7 +9,7 @@ const FooterCommon = (props) => {
           <div className='row justify-content-center'>
             <div className='col-md-3 my-2'>
               <div className='footer_logo_content'>
-                <div className='footer_title_text mt-1'>
+                <div className='footer_title_text'>
                   <h4>{props.title}</h4>
                   <p className='mt-3'>{props.details}</p>
                 </div>
@@ -41,7 +41,7 @@ const FooterCommon = (props) => {
                 </div>
               </div>
             </div>
-            <div className='col-md-3'>
+            <div className='col-md-3 my-2'>
               <div className='footer_quick_link'>
                 <div className='footer_quick_heading'>
                   <h4>{props.footer_quick_headin}</h4>
@@ -103,6 +103,20 @@ const FooterCommon = (props) => {
                         <li>
                           <span>
                             <i class='far fa-envelope envelop'></i>
+                          </span>
+                          <a href='#'>{props.footer_imail}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className='row d-flex align-items-center '>
+                  <div className='col-md-12'>
+                    <div className='email'>
+                      <ul>
+                        <li>
+                          <span>
+                            <i class='fas fa-map-marker-alt phone'></i>
                           </span>
                           <a href='#'>{props.footer_imail}</a>
                         </li>
